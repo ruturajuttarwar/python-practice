@@ -3,7 +3,6 @@ name: Daily Python Practice
 
 on:
   schedule:
-    # Runs daily at 9:00 UTC
     - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
@@ -37,55 +36,44 @@ jobs:
       - name: Generate and commit Python solutions
         run: |
           python3 << 'PYTHON_SCRIPT'
-          import random
-          import os
-          import subprocess
-          import datetime
-          import hashlib
-          import json
+          import random, os, subprocess, datetime, hashlib, json, textwrap
 
-          # ── Seed randomness with the date so reruns on same day are consistent ──
           today = datetime.date.today()
           seed = int(hashlib.md5(today.isoformat().encode()).hexdigest(), 16)
           random.seed(seed)
 
-          # ── Should we skip today? (~1 in 7 chance) ──
           force = os.environ.get("FORCE_RUN", "false") == "true"
-          skip_chance = random.random()
-          if skip_chance < 0.14 and not force:  # ~1/7 days
-              print(f"📅 Skipping today ({today}) — rest day!")
+          if random.random() < 0.14 and not force:
+              print(f"Skipping today ({today}) — rest day!")
               exit(0)
 
-          # ── How many commits today? Weighted toward 2-5 ──
           weights = {1: 10, 2: 20, 3: 25, 4: 20, 5: 15, 6: 5, 7: 3, 8: 2}
-          num_commits = random.choices(
-              list(weights.keys()),
-              weights=list(weights.values()),
-              k=1
-          )[0]
-          print(f"📝 Today: {num_commits} problem(s) to solve")
+          num_commits = random.choices(list(weights.keys()), weights=list(weights.values()), k=1)[0]
+          print(f"Today: {num_commits} problem(s) to solve")
 
-          # ── Problem bank ──
-          # Each problem: (category, slug, title, description, solution_code, test_code)
           PROBLEMS = [
-              # ── Strings ──
-              ("strings", "reverse_string", "Reverse a String",
-               "Write a function that reverses a given string without using slicing.",
-               '''def reverse_string(s: str) -> str:
-              """Reverse a string without using slicing."""
+          ("strings", "reverse_string", "Reverse a String",
+          "Write a function that reverses a given string without using slicing.",
+          textwrap.dedent("""\
+          def reverse_string(s: str) -> str:
+              \"\"\"Reverse a string without using slicing.\"\"\"
               result = []
               for char in s:
                   result.insert(0, char)
-              return ''.join(result)''',
-               '''assert reverse_string("hello") == "olleh"
+              return ''.join(result)
+          """),
+          textwrap.dedent("""\
+          assert reverse_string("hello") == "olleh"
           assert reverse_string("Python") == "nohtyP"
           assert reverse_string("") == ""
-          assert reverse_string("a") == "a"'''),
+          assert reverse_string("a") == "a"
+          """)),
 
-              ("strings", "is_palindrome", "Check Palindrome",
-               "Write a function that checks if a given string is a palindrome (case-insensitive).",
-               '''def is_palindrome(s: str) -> bool:
-              """Check if string is a palindrome, ignoring case and spaces."""
+          ("strings", "is_palindrome", "Check Palindrome",
+          "Check if a given string is a palindrome (case-insensitive).",
+          textwrap.dedent("""\
+          def is_palindrome(s: str) -> bool:
+              \"\"\"Check if string is a palindrome, ignoring case and spaces.\"\"\"
               cleaned = ''.join(c.lower() for c in s if c.isalnum())
               left, right = 0, len(cleaned) - 1
               while left < right:
@@ -93,43 +81,55 @@ jobs:
                       return False
                   left += 1
                   right -= 1
-              return True''',
-               '''assert is_palindrome("racecar") == True
+              return True
+          """),
+          textwrap.dedent("""\
+          assert is_palindrome("racecar") == True
           assert is_palindrome("Race Car") == True
           assert is_palindrome("hello") == False
-          assert is_palindrome("A man a plan a canal Panama") == True'''),
+          assert is_palindrome("A man a plan a canal Panama") == True
+          """)),
 
-              ("strings", "count_vowels", "Count Vowels",
-               "Write a function that counts the number of vowels in a string.",
-               '''def count_vowels(s: str) -> int:
-              """Count the number of vowels in a string."""
+          ("strings", "count_vowels", "Count Vowels",
+          "Count the number of vowels in a string.",
+          textwrap.dedent("""\
+          def count_vowels(s: str) -> int:
+              \"\"\"Count the number of vowels in a string.\"\"\"
               vowels = set('aeiouAEIOU')
-              return sum(1 for char in s if char in vowels)''',
-               '''assert count_vowels("hello") == 2
+              return sum(1 for char in s if char in vowels)
+          """),
+          textwrap.dedent("""\
+          assert count_vowels("hello") == 2
           assert count_vowels("AEIOU") == 5
           assert count_vowels("rhythm") == 0
-          assert count_vowels("") == 0'''),
+          assert count_vowels("") == 0
+          """)),
 
-              ("strings", "first_non_repeating", "First Non-Repeating Character",
-               "Find the first non-repeating character in a string. Return None if all repeat.",
-               '''def first_non_repeating(s: str) -> str:
-              """Find first character that doesn't repeat in the string."""
+          ("strings", "first_non_repeating", "First Non-Repeating Character",
+          "Find the first non-repeating character in a string.",
+          textwrap.dedent("""\
+          def first_non_repeating(s: str) -> str:
+              \"\"\"Find first character that doesn't repeat in the string.\"\"\"
               char_count = {}
               for char in s:
                   char_count[char] = char_count.get(char, 0) + 1
               for char in s:
                   if char_count[char] == 1:
                       return char
-              return None''',
-               '''assert first_non_repeating("aabbcdd") == "c"
+              return None
+          """),
+          textwrap.dedent("""\
+          assert first_non_repeating("aabbcdd") == "c"
           assert first_non_repeating("abcabc") == None
           assert first_non_repeating("a") == "a"
-          assert first_non_repeating("aabbc") == "c"'''),
+          assert first_non_repeating("aabbc") == "c"
+          """)),
 
-              ("strings", "caesar_cipher", "Caesar Cipher",
-               "Implement a Caesar cipher that shifts each letter by a given number of positions.",
-               '''def caesar_cipher(text: str, shift: int) -> str:
-              """Encrypt text using Caesar cipher with given shift."""
+          ("strings", "caesar_cipher", "Caesar Cipher",
+          "Implement a Caesar cipher that shifts each letter by a given number of positions.",
+          textwrap.dedent("""\
+          def caesar_cipher(text: str, shift: int) -> str:
+              \"\"\"Encrypt text using Caesar cipher with given shift.\"\"\"
               result = []
               for char in text:
                   if char.isalpha():
@@ -138,28 +138,36 @@ jobs:
                       result.append(chr(shifted))
                   else:
                       result.append(char)
-              return ''.join(result)''',
-               '''assert caesar_cipher("abc", 1) == "bcd"
+              return ''.join(result)
+          """),
+          textwrap.dedent("""\
+          assert caesar_cipher("abc", 1) == "bcd"
           assert caesar_cipher("xyz", 3) == "abc"
           assert caesar_cipher("Hello, World!", 5) == "Mjqqt, Btwqi!"
-          assert caesar_cipher("abc", 0) == "abc"'''),
+          assert caesar_cipher("abc", 0) == "abc"
+          """)),
 
-              ("strings", "anagram_check", "Anagram Check",
-               "Write a function to check if two strings are anagrams of each other.",
-               '''def is_anagram(s1: str, s2: str) -> bool:
-              """Check if two strings are anagrams (case-insensitive)."""
+          ("strings", "anagram_check", "Anagram Check",
+          "Check if two strings are anagrams of each other.",
+          textwrap.dedent("""\
+          def is_anagram(s1: str, s2: str) -> bool:
+              \"\"\"Check if two strings are anagrams (case-insensitive).\"\"\"
               clean1 = sorted(s1.lower().replace(" ", ""))
               clean2 = sorted(s2.lower().replace(" ", ""))
-              return clean1 == clean2''',
-               '''assert is_anagram("listen", "silent") == True
+              return clean1 == clean2
+          """),
+          textwrap.dedent("""\
+          assert is_anagram("listen", "silent") == True
           assert is_anagram("Hello", "World") == False
           assert is_anagram("Dormitory", "Dirty Room") == True
-          assert is_anagram("a", "a") == True'''),
+          assert is_anagram("a", "a") == True
+          """)),
 
-              ("strings", "compress_string", "String Compression",
-               "Implement basic string compression using counts of repeated characters.",
-               '''def compress_string(s: str) -> str:
-              """Compress string using run-length encoding."""
+          ("strings", "compress_string", "String Compression",
+          "Implement basic string compression using counts of repeated characters.",
+          textwrap.dedent("""\
+          def compress_string(s: str) -> str:
+              \"\"\"Compress string using run-length encoding.\"\"\"
               if not s:
                   return ""
               result = []
@@ -172,16 +180,20 @@ jobs:
                       count = 1
               result.append(f"{s[-1]}{count}")
               compressed = ''.join(result)
-              return compressed if len(compressed) < len(s) else s''',
-               '''assert compress_string("aabcccccaaa") == "a2b1c5a3"
+              return compressed if len(compressed) < len(s) else s
+          """),
+          textwrap.dedent("""\
+          assert compress_string("aabcccccaaa") == "a2b1c5a3"
           assert compress_string("abc") == "abc"
           assert compress_string("aabb") == "aabb"
-          assert compress_string("") == ""'''),
+          assert compress_string("") == ""
+          """)),
 
-              ("strings", "title_case", "Title Case Converter",
-               "Convert a string to title case without using the built-in title() method.",
-               '''def to_title_case(s: str) -> str:
-              """Convert string to title case manually."""
+          ("strings", "title_case", "Title Case Converter",
+          "Convert a string to title case without using the built-in title() method.",
+          textwrap.dedent("""\
+          def to_title_case(s: str) -> str:
+              \"\"\"Convert string to title case manually.\"\"\"
               if not s:
                   return ""
               words = s.split()
@@ -189,17 +201,20 @@ jobs:
               for word in words:
                   if word:
                       result.append(word[0].upper() + word[1:].lower())
-              return ' '.join(result)''',
-               '''assert to_title_case("hello world") == "Hello World"
+              return ' '.join(result)
+          """),
+          textwrap.dedent("""\
+          assert to_title_case("hello world") == "Hello World"
           assert to_title_case("PYTHON IS FUN") == "Python Is Fun"
           assert to_title_case("a") == "A"
-          assert to_title_case("") == ""'''),
+          assert to_title_case("") == ""
+          """)),
 
-              # ── Numbers / Math ──
-              ("math", "fizzbuzz", "FizzBuzz",
-               "Write a function that returns FizzBuzz output for numbers 1 to n.",
-               '''def fizzbuzz(n: int) -> list:
-              """Classic FizzBuzz from 1 to n."""
+          ("math", "fizzbuzz", "FizzBuzz",
+          "Write a function that returns FizzBuzz output for numbers 1 to n.",
+          textwrap.dedent("""\
+          def fizzbuzz(n: int) -> list:
+              \"\"\"Classic FizzBuzz from 1 to n.\"\"\"
               result = []
               for i in range(1, n + 1):
                   if i % 15 == 0:
@@ -210,15 +225,19 @@ jobs:
                       result.append("Buzz")
                   else:
                       result.append(str(i))
-              return result''',
-               '''assert fizzbuzz(5) == ["1", "2", "Fizz", "4", "Buzz"]
+              return result
+          """),
+          textwrap.dedent("""\
+          assert fizzbuzz(5) == ["1", "2", "Fizz", "4", "Buzz"]
           assert fizzbuzz(15)[-1] == "FizzBuzz"
-          assert len(fizzbuzz(100)) == 100'''),
+          assert len(fizzbuzz(100)) == 100
+          """)),
 
-              ("math", "fibonacci", "Fibonacci Sequence",
-               "Write a function that returns the first n Fibonacci numbers.",
-               '''def fibonacci(n: int) -> list:
-              """Generate first n Fibonacci numbers."""
+          ("math", "fibonacci", "Fibonacci Sequence",
+          "Return the first n Fibonacci numbers.",
+          textwrap.dedent("""\
+          def fibonacci(n: int) -> list:
+              \"\"\"Generate first n Fibonacci numbers.\"\"\"
               if n <= 0:
                   return []
               if n == 1:
@@ -226,16 +245,20 @@ jobs:
               fibs = [0, 1]
               for _ in range(2, n):
                   fibs.append(fibs[-1] + fibs[-2])
-              return fibs''',
-               '''assert fibonacci(1) == [0]
+              return fibs
+          """),
+          textwrap.dedent("""\
+          assert fibonacci(1) == [0]
           assert fibonacci(5) == [0, 1, 1, 2, 3]
           assert fibonacci(8) == [0, 1, 1, 2, 3, 5, 8, 13]
-          assert fibonacci(0) == []'''),
+          assert fibonacci(0) == []
+          """)),
 
-              ("math", "prime_check", "Prime Number Check",
-               "Write a function to check if a number is prime.",
-               '''def is_prime(n: int) -> bool:
-              """Check if a number is prime."""
+          ("math", "prime_check", "Prime Number Check",
+          "Check if a number is prime.",
+          textwrap.dedent("""\
+          def is_prime(n: int) -> bool:
+              \"\"\"Check if a number is prime.\"\"\"
               if n < 2:
                   return False
               if n < 4:
@@ -247,33 +270,41 @@ jobs:
                   if n % i == 0 or n % (i + 2) == 0:
                       return False
                   i += 6
-              return True''',
-               '''assert is_prime(2) == True
+              return True
+          """),
+          textwrap.dedent("""\
+          assert is_prime(2) == True
           assert is_prime(17) == True
           assert is_prime(1) == False
           assert is_prime(4) == False
-          assert is_prime(97) == True'''),
+          assert is_prime(97) == True
+          """)),
 
-              ("math", "gcd_lcm", "GCD and LCM",
-               "Write functions to compute the Greatest Common Divisor and Least Common Multiple.",
-               '''def gcd(a: int, b: int) -> int:
-              """Compute GCD using Euclidean algorithm."""
+          ("math", "gcd_lcm", "GCD and LCM",
+          "Compute the Greatest Common Divisor and Least Common Multiple.",
+          textwrap.dedent("""\
+          def gcd(a: int, b: int) -> int:
+              \"\"\"Compute GCD using Euclidean algorithm.\"\"\"
               while b:
                   a, b = b, a % b
               return a
 
           def lcm(a: int, b: int) -> int:
-              """Compute LCM using GCD."""
-              return abs(a * b) // gcd(a, b)''',
-               '''assert gcd(12, 8) == 4
+              \"\"\"Compute LCM using GCD.\"\"\"
+              return abs(a * b) // gcd(a, b)
+          """),
+          textwrap.dedent("""\
+          assert gcd(12, 8) == 4
           assert gcd(17, 5) == 1
           assert lcm(4, 6) == 12
-          assert lcm(3, 7) == 21'''),
+          assert lcm(3, 7) == 21
+          """)),
 
-              ("math", "factorial", "Factorial Calculator",
-               "Write both iterative and recursive implementations of factorial.",
-               '''def factorial_iterative(n: int) -> int:
-              """Calculate factorial iteratively."""
+          ("math", "factorial", "Factorial Calculator",
+          "Write both iterative and recursive implementations of factorial.",
+          textwrap.dedent("""\
+          def factorial_iterative(n: int) -> int:
+              \"\"\"Calculate factorial iteratively.\"\"\"
               if n < 0:
                   raise ValueError("Factorial not defined for negative numbers")
               result = 1
@@ -282,121 +313,152 @@ jobs:
               return result
 
           def factorial_recursive(n: int) -> int:
-              """Calculate factorial recursively."""
+              \"\"\"Calculate factorial recursively.\"\"\"
               if n < 0:
                   raise ValueError("Factorial not defined for negative numbers")
               if n <= 1:
                   return 1
-              return n * factorial_recursive(n - 1)''',
-               '''assert factorial_iterative(5) == 120
+              return n * factorial_recursive(n - 1)
+          """),
+          textwrap.dedent("""\
+          assert factorial_iterative(5) == 120
           assert factorial_iterative(0) == 1
           assert factorial_recursive(5) == 120
-          assert factorial_recursive(0) == 1'''),
+          assert factorial_recursive(0) == 1
+          """)),
 
-              ("math", "power_of_two", "Power of Two",
-               "Check if a given number is a power of two using bit manipulation.",
-               '''def is_power_of_two(n: int) -> bool:
-              """Check if n is a power of 2 using bit manipulation."""
+          ("math", "power_of_two", "Power of Two",
+          "Check if a given number is a power of two using bit manipulation.",
+          textwrap.dedent("""\
+          def is_power_of_two(n: int) -> bool:
+              \"\"\"Check if n is a power of 2 using bit manipulation.\"\"\"
               if n <= 0:
                   return False
-              return (n & (n - 1)) == 0''',
-               '''assert is_power_of_two(1) == True
+              return (n & (n - 1)) == 0
+          """),
+          textwrap.dedent("""\
+          assert is_power_of_two(1) == True
           assert is_power_of_two(16) == True
           assert is_power_of_two(18) == False
           assert is_power_of_two(0) == False
-          assert is_power_of_two(1024) == True'''),
+          assert is_power_of_two(1024) == True
+          """)),
 
-              ("math", "digit_sum", "Sum of Digits",
-               "Write a function that computes the sum of digits of a number recursively.",
-               '''def digit_sum(n: int) -> int:
-              """Recursively sum all digits of a number."""
+          ("math", "digit_sum", "Sum of Digits",
+          "Compute the sum of digits of a number recursively.",
+          textwrap.dedent("""\
+          def digit_sum(n: int) -> int:
+              \"\"\"Recursively sum all digits of a number.\"\"\"
               n = abs(n)
               if n < 10:
                   return n
-              return n % 10 + digit_sum(n // 10)''',
-               '''assert digit_sum(123) == 6
+              return n % 10 + digit_sum(n // 10)
+          """),
+          textwrap.dedent("""\
+          assert digit_sum(123) == 6
           assert digit_sum(9999) == 36
           assert digit_sum(0) == 0
-          assert digit_sum(-456) == 15'''),
+          assert digit_sum(-456) == 15
+          """)),
 
-              ("math", "armstrong_number", "Armstrong Number",
-               "Check if a number is an Armstrong number (sum of digits raised to power of digit count equals the number).",
-               '''def is_armstrong(n: int) -> bool:
-              """Check if n is an Armstrong (narcissistic) number."""
+          ("math", "armstrong_number", "Armstrong Number",
+          "Check if a number is an Armstrong number.",
+          textwrap.dedent("""\
+          def is_armstrong(n: int) -> bool:
+              \"\"\"Check if n is an Armstrong (narcissistic) number.\"\"\"
               digits = str(abs(n))
               power = len(digits)
               total = sum(int(d) ** power for d in digits)
-              return total == abs(n)''',
-               '''assert is_armstrong(153) == True
+              return total == abs(n)
+          """),
+          textwrap.dedent("""\
+          assert is_armstrong(153) == True
           assert is_armstrong(370) == True
           assert is_armstrong(9474) == True
-          assert is_armstrong(123) == False'''),
+          assert is_armstrong(123) == False
+          """)),
 
-              # ── Lists / Arrays ──
-              ("lists", "two_sum", "Two Sum",
-               "Given a list of numbers and a target, find indices of two numbers that add up to the target.",
-               '''def two_sum(nums: list, target: int) -> list:
-              """Find two indices whose values sum to target."""
+          ("lists", "two_sum", "Two Sum",
+          "Find indices of two numbers that add up to the target.",
+          textwrap.dedent("""\
+          def two_sum(nums: list, target: int) -> list:
+              \"\"\"Find two indices whose values sum to target.\"\"\"
               seen = {}
               for i, num in enumerate(nums):
                   complement = target - num
                   if complement in seen:
                       return [seen[complement], i]
                   seen[num] = i
-              return []''',
-               '''assert two_sum([2, 7, 11, 15], 9) == [0, 1]
+              return []
+          """),
+          textwrap.dedent("""\
+          assert two_sum([2, 7, 11, 15], 9) == [0, 1]
           assert two_sum([3, 2, 4], 6) == [1, 2]
-          assert two_sum([1, 2, 3], 10) == []'''),
+          assert two_sum([1, 2, 3], 10) == []
+          """)),
 
-              ("lists", "remove_duplicates", "Remove Duplicates",
-               "Remove duplicates from a list while preserving the original order.",
-               '''def remove_duplicates(lst: list) -> list:
-              """Remove duplicates while preserving order."""
+          ("lists", "remove_duplicates", "Remove Duplicates",
+          "Remove duplicates from a list while preserving order.",
+          textwrap.dedent("""\
+          def remove_duplicates(lst: list) -> list:
+              \"\"\"Remove duplicates while preserving order.\"\"\"
               seen = set()
               result = []
               for item in lst:
                   if item not in seen:
                       seen.add(item)
                       result.append(item)
-              return result''',
-               '''assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
+              return result
+          """),
+          textwrap.dedent("""\
+          assert remove_duplicates([1, 2, 2, 3, 3, 3]) == [1, 2, 3]
           assert remove_duplicates([1, 1, 1]) == [1]
           assert remove_duplicates([]) == []
-          assert remove_duplicates([1, 2, 3]) == [1, 2, 3]'''),
+          assert remove_duplicates([1, 2, 3]) == [1, 2, 3]
+          """)),
 
-              ("lists", "flatten_list", "Flatten Nested List",
-               "Write a function to flatten a nested list of arbitrary depth.",
-               '''def flatten(lst: list) -> list:
-              """Flatten a nested list of arbitrary depth."""
+          ("lists", "flatten_list", "Flatten Nested List",
+          "Flatten a nested list of arbitrary depth.",
+          textwrap.dedent("""\
+          def flatten(lst: list) -> list:
+              \"\"\"Flatten a nested list of arbitrary depth.\"\"\"
               result = []
               for item in lst:
                   if isinstance(item, list):
                       result.extend(flatten(item))
                   else:
                       result.append(item)
-              return result''',
-               '''assert flatten([1, [2, 3], [4, [5, 6]]]) == [1, 2, 3, 4, 5, 6]
+              return result
+          """),
+          textwrap.dedent("""\
+          assert flatten([1, [2, 3], [4, [5, 6]]]) == [1, 2, 3, 4, 5, 6]
           assert flatten([]) == []
           assert flatten([1, 2, 3]) == [1, 2, 3]
-          assert flatten([[[[1]]]]) == [1]'''),
+          assert flatten([[[[1]]]]) == [1]
+          """)),
 
-              ("lists", "rotate_list", "Rotate List",
-               "Rotate a list by k positions to the right.",
-               '''def rotate_list(lst: list, k: int) -> list:
-              """Rotate list by k positions to the right."""
+          ("lists", "rotate_list", "Rotate List",
+          "Rotate a list by k positions to the right.",
+          textwrap.dedent("""\
+          def rotate_list(lst: list, k: int) -> list:
+              \"\"\"Rotate list by k positions to the right.\"\"\"
               if not lst:
                   return []
               k = k % len(lst)
-              return lst[-k:] + lst[:-k] if k else lst[:]''',
-               '''assert rotate_list([1, 2, 3, 4, 5], 2) == [4, 5, 1, 2, 3]
+              return lst[-k:] + lst[:-k] if k else lst[:]
+          """),
+          textwrap.dedent("""\
+          assert rotate_list([1, 2, 3, 4, 5], 2) == [4, 5, 1, 2, 3]
           assert rotate_list([1, 2, 3], 0) == [1, 2, 3]
           assert rotate_list([1, 2, 3], 3) == [1, 2, 3]
-          assert rotate_list([], 5) == []'''),
+          assert rotate_list([], 5) == []
+          """)),
 
-              ("lists", "merge_sorted", "Merge Sorted Lists",
-               "Merge two sorted lists into a single sorted list.",
-               '''def merge_sorted(list1: list, list2: list) -> list:
-              """Merge two sorted lists into one sorted list."""
+          ("lists", "merge_sorted", "Merge Sorted Lists",
+          "Merge two sorted lists into one sorted list.",
+          textwrap.dedent("""\
+          def merge_sorted(list1: list, list2: list) -> list:
+              \"\"\"Merge two sorted lists into one sorted list.\"\"\"
               result = []
               i = j = 0
               while i < len(list1) and j < len(list2):
@@ -408,28 +470,36 @@ jobs:
                       j += 1
               result.extend(list1[i:])
               result.extend(list2[j:])
-              return result''',
-               '''assert merge_sorted([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]
+              return result
+          """),
+          textwrap.dedent("""\
+          assert merge_sorted([1, 3, 5], [2, 4, 6]) == [1, 2, 3, 4, 5, 6]
           assert merge_sorted([], [1, 2]) == [1, 2]
           assert merge_sorted([1], []) == [1]
-          assert merge_sorted([], []) == []'''),
+          assert merge_sorted([], []) == []
+          """)),
 
-              ("lists", "chunk_list", "Chunk List",
-               "Split a list into chunks of a given size.",
-               '''def chunk_list(lst: list, size: int) -> list:
-              """Split list into chunks of given size."""
+          ("lists", "chunk_list", "Chunk List",
+          "Split a list into chunks of a given size.",
+          textwrap.dedent("""\
+          def chunk_list(lst: list, size: int) -> list:
+              \"\"\"Split list into chunks of given size.\"\"\"
               if size <= 0:
                   raise ValueError("Chunk size must be positive")
-              return [lst[i:i + size] for i in range(0, len(lst), size)]''',
-               '''assert chunk_list([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
+              return [lst[i:i + size] for i in range(0, len(lst), size)]
+          """),
+          textwrap.dedent("""\
+          assert chunk_list([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
           assert chunk_list([1, 2, 3], 1) == [[1], [2], [3]]
           assert chunk_list([1, 2, 3], 5) == [[1, 2, 3]]
-          assert chunk_list([], 3) == []'''),
+          assert chunk_list([], 3) == []
+          """)),
 
-              ("lists", "second_largest", "Second Largest Element",
-               "Find the second largest element in a list without sorting.",
-               '''def second_largest(nums: list) -> int:
-              """Find second largest element without sorting."""
+          ("lists", "second_largest", "Second Largest Element",
+          "Find the second largest element without sorting.",
+          textwrap.dedent("""\
+          def second_largest(nums: list) -> int:
+              \"\"\"Find second largest element without sorting.\"\"\"
               if len(nums) < 2:
                   raise ValueError("Need at least 2 elements")
               first = second = float('-inf')
@@ -440,32 +510,39 @@ jobs:
                   elif num > second and num != first:
                       second = num
               if second == float('-inf'):
-                  raise ValueError("No second largest (all elements equal)")
-              return second''',
-               '''assert second_largest([1, 5, 2, 8, 3]) == 5
+                  raise ValueError("No second largest found")
+              return second
+          """),
+          textwrap.dedent("""\
+          assert second_largest([1, 5, 2, 8, 3]) == 5
           assert second_largest([10, 20]) == 10
-          assert second_largest([1, 2, 3, 4, 5]) == 4'''),
+          assert second_largest([1, 2, 3, 4, 5]) == 4
+          """)),
 
-              # ── Dictionaries ──
-              ("dicts", "word_frequency", "Word Frequency Counter",
-               "Count the frequency of each word in a given text.",
-               '''def word_frequency(text: str) -> dict:
-              """Count frequency of each word in text."""
+          ("dicts", "word_frequency", "Word Frequency Counter",
+          "Count the frequency of each word in a given text.",
+          textwrap.dedent("""\
+          def word_frequency(text: str) -> dict:
+              \"\"\"Count frequency of each word in text.\"\"\"
               words = text.lower().split()
               freq = {}
               for word in words:
                   cleaned = ''.join(c for c in word if c.isalnum())
                   if cleaned:
                       freq[cleaned] = freq.get(cleaned, 0) + 1
-              return freq''',
-               '''assert word_frequency("the cat and the dog") == {"the": 2, "cat": 1, "and": 1, "dog": 1}
+              return freq
+          """),
+          textwrap.dedent("""\
+          assert word_frequency("the cat and the dog") == {"the": 2, "cat": 1, "and": 1, "dog": 1}
           assert word_frequency("hello hello hello") == {"hello": 3}
-          assert word_frequency("") == {}'''),
+          assert word_frequency("") == {}
+          """)),
 
-              ("dicts", "invert_dict", "Invert Dictionary",
-               "Swap keys and values of a dictionary. Handle duplicate values by collecting keys into lists.",
-               '''def invert_dict(d: dict) -> dict:
-              """Invert a dictionary, collecting keys for duplicate values."""
+          ("dicts", "invert_dict", "Invert Dictionary",
+          "Swap keys and values of a dictionary.",
+          textwrap.dedent("""\
+          def invert_dict(d: dict) -> dict:
+              \"\"\"Invert a dictionary, collecting keys for duplicate values.\"\"\"
               inverted = {}
               for key, value in d.items():
                   if value in inverted:
@@ -475,48 +552,59 @@ jobs:
                           inverted[value] = [inverted[value], key]
                   else:
                       inverted[value] = key
-              return inverted''',
-               '''assert invert_dict({"a": 1, "b": 2}) == {1: "a", 2: "b"}
+              return inverted
+          """),
+          textwrap.dedent("""\
+          assert invert_dict({"a": 1, "b": 2}) == {1: "a", 2: "b"}
           assert invert_dict({"a": 1, "b": 1}) == {1: ["a", "b"]}
-          assert invert_dict({}) == {}'''),
+          assert invert_dict({}) == {}
+          """)),
 
-              ("dicts", "merge_dicts", "Deep Merge Dictionaries",
-               "Merge two dictionaries, combining values for shared keys.",
-               '''def merge_dicts(d1: dict, d2: dict) -> dict:
-              """Deep merge two dictionaries."""
+          ("dicts", "merge_dicts", "Deep Merge Dictionaries",
+          "Merge two dictionaries, combining nested dicts.",
+          textwrap.dedent("""\
+          def merge_dicts(d1: dict, d2: dict) -> dict:
+              \"\"\"Deep merge two dictionaries.\"\"\"
               result = d1.copy()
               for key, value in d2.items():
                   if key in result and isinstance(result[key], dict) and isinstance(value, dict):
                       result[key] = merge_dicts(result[key], value)
                   else:
                       result[key] = value
-              return result''',
-               '''assert merge_dicts({"a": 1}, {"b": 2}) == {"a": 1, "b": 2}
+              return result
+          """),
+          textwrap.dedent("""\
+          assert merge_dicts({"a": 1}, {"b": 2}) == {"a": 1, "b": 2}
           assert merge_dicts({"a": 1}, {"a": 2}) == {"a": 2}
           assert merge_dicts({"a": {"x": 1}}, {"a": {"y": 2}}) == {"a": {"x": 1, "y": 2}}
-          assert merge_dicts({}, {"a": 1}) == {"a": 1}'''),
+          assert merge_dicts({}, {"a": 1}) == {"a": 1}
+          """)),
 
-              ("dicts", "group_by", "Group By Key",
-               "Group a list of dictionaries by a given key.",
-               '''def group_by(items: list, key: str) -> dict:
-              """Group list of dicts by a given key."""
+          ("dicts", "group_by", "Group By Key",
+          "Group a list of dictionaries by a given key.",
+          textwrap.dedent("""\
+          def group_by(items: list, key: str) -> dict:
+              \"\"\"Group list of dicts by a given key.\"\"\"
               groups = {}
               for item in items:
                   k = item.get(key)
                   if k not in groups:
                       groups[k] = []
                   groups[k].append(item)
-              return groups''',
-               '''data = [{"name": "Alice", "dept": "Eng"}, {"name": "Bob", "dept": "Eng"}, {"name": "Carol", "dept": "HR"}]
+              return groups
+          """),
+          textwrap.dedent("""\
+          data = [{"name": "Alice", "dept": "Eng"}, {"name": "Bob", "dept": "Eng"}, {"name": "Carol", "dept": "HR"}]
           result = group_by(data, "dept")
           assert len(result["Eng"]) == 2
-          assert len(result["HR"]) == 1'''),
+          assert len(result["HR"]) == 1
+          """)),
 
-              # ── Sorting / Searching ──
-              ("sorting", "bubble_sort", "Bubble Sort",
-               "Implement the bubble sort algorithm.",
-               '''def bubble_sort(arr: list) -> list:
-              """Sort a list using bubble sort algorithm."""
+          ("sorting", "bubble_sort", "Bubble Sort",
+          "Implement the bubble sort algorithm.",
+          textwrap.dedent("""\
+          def bubble_sort(arr: list) -> list:
+              \"\"\"Sort a list using bubble sort algorithm.\"\"\"
               arr = arr[:]
               n = len(arr)
               for i in range(n):
@@ -527,16 +615,20 @@ jobs:
                           swapped = True
                   if not swapped:
                       break
-              return arr''',
-               '''assert bubble_sort([64, 34, 25, 12, 22]) == [12, 22, 25, 34, 64]
+              return arr
+          """),
+          textwrap.dedent("""\
+          assert bubble_sort([64, 34, 25, 12, 22]) == [12, 22, 25, 34, 64]
           assert bubble_sort([1]) == [1]
           assert bubble_sort([]) == []
-          assert bubble_sort([3, 2, 1]) == [1, 2, 3]'''),
+          assert bubble_sort([3, 2, 1]) == [1, 2, 3]
+          """)),
 
-              ("sorting", "binary_search", "Binary Search",
-               "Implement binary search on a sorted list.",
-               '''def binary_search(arr: list, target: int) -> int:
-              """Binary search — returns index or -1 if not found."""
+          ("sorting", "binary_search", "Binary Search",
+          "Implement binary search on a sorted list.",
+          textwrap.dedent("""\
+          def binary_search(arr: list, target: int) -> int:
+              \"\"\"Binary search — returns index or -1 if not found.\"\"\"
               left, right = 0, len(arr) - 1
               while left <= right:
                   mid = (left + right) // 2
@@ -546,16 +638,20 @@ jobs:
                       left = mid + 1
                   else:
                       right = mid - 1
-              return -1''',
-               '''assert binary_search([1, 3, 5, 7, 9], 5) == 2
+              return -1
+          """),
+          textwrap.dedent("""\
+          assert binary_search([1, 3, 5, 7, 9], 5) == 2
           assert binary_search([1, 3, 5, 7, 9], 6) == -1
           assert binary_search([], 1) == -1
-          assert binary_search([42], 42) == 0'''),
+          assert binary_search([42], 42) == 0
+          """)),
 
-              ("sorting", "insertion_sort", "Insertion Sort",
-               "Implement the insertion sort algorithm.",
-               '''def insertion_sort(arr: list) -> list:
-              """Sort a list using insertion sort algorithm."""
+          ("sorting", "insertion_sort", "Insertion Sort",
+          "Implement the insertion sort algorithm.",
+          textwrap.dedent("""\
+          def insertion_sort(arr: list) -> list:
+              \"\"\"Sort a list using insertion sort algorithm.\"\"\"
               arr = arr[:]
               for i in range(1, len(arr)):
                   key = arr[i]
@@ -564,16 +660,20 @@ jobs:
                       arr[j + 1] = arr[j]
                       j -= 1
                   arr[j + 1] = key
-              return arr''',
-               '''assert insertion_sort([12, 11, 13, 5, 6]) == [5, 6, 11, 12, 13]
+              return arr
+          """),
+          textwrap.dedent("""\
+          assert insertion_sort([12, 11, 13, 5, 6]) == [5, 6, 11, 12, 13]
           assert insertion_sort([1]) == [1]
           assert insertion_sort([]) == []
-          assert insertion_sort([2, 1]) == [1, 2]'''),
+          assert insertion_sort([2, 1]) == [1, 2]
+          """)),
 
-              ("sorting", "selection_sort", "Selection Sort",
-               "Implement the selection sort algorithm.",
-               '''def selection_sort(arr: list) -> list:
-              """Sort a list using selection sort algorithm."""
+          ("sorting", "selection_sort", "Selection Sort",
+          "Implement the selection sort algorithm.",
+          textwrap.dedent("""\
+          def selection_sort(arr: list) -> list:
+              \"\"\"Sort a list using selection sort algorithm.\"\"\"
               arr = arr[:]
               n = len(arr)
               for i in range(n):
@@ -582,28 +682,35 @@ jobs:
                       if arr[j] < arr[min_idx]:
                           min_idx = j
                   arr[i], arr[min_idx] = arr[min_idx], arr[i]
-              return arr''',
-               '''assert selection_sort([64, 25, 12, 22, 11]) == [11, 12, 22, 25, 64]
+              return arr
+          """),
+          textwrap.dedent("""\
+          assert selection_sort([64, 25, 12, 22, 11]) == [11, 12, 22, 25, 64]
           assert selection_sort([1]) == [1]
           assert selection_sort([]) == []
-          assert selection_sort([3, 1, 2]) == [1, 2, 3]'''),
+          assert selection_sort([3, 1, 2]) == [1, 2, 3]
+          """)),
 
-              # ── File / Utility ──
-              ("utility", "matrix_transpose", "Matrix Transpose",
-               "Write a function to transpose a matrix (list of lists).",
-               '''def transpose(matrix: list) -> list:
-              """Transpose a matrix (list of lists)."""
+          ("utility", "matrix_transpose", "Matrix Transpose",
+          "Transpose a matrix (list of lists).",
+          textwrap.dedent("""\
+          def transpose(matrix: list) -> list:
+              \"\"\"Transpose a matrix (list of lists).\"\"\"
               if not matrix:
                   return []
-              return [[row[i] for row in matrix] for i in range(len(matrix[0]))]''',
-               '''assert transpose([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]
+              return [[row[i] for row in matrix] for i in range(len(matrix[0]))]
+          """),
+          textwrap.dedent("""\
+          assert transpose([[1, 2], [3, 4]]) == [[1, 3], [2, 4]]
           assert transpose([[1, 2, 3]]) == [[1], [2], [3]]
-          assert transpose([]) == []'''),
+          assert transpose([]) == []
+          """)),
 
-              ("utility", "flatten_dict", "Flatten Dictionary",
-               "Flatten a nested dictionary with dot-separated keys.",
-               '''def flatten_dict(d: dict, parent_key: str = '', sep: str = '.') -> dict:
-              """Flatten nested dict with dot-separated keys."""
+          ("utility", "flatten_dict", "Flatten Dictionary",
+          "Flatten a nested dictionary with dot-separated keys.",
+          textwrap.dedent("""\
+          def flatten_dict(d: dict, parent_key: str = '', sep: str = '.') -> dict:
+              \"\"\"Flatten nested dict with dot-separated keys.\"\"\"
               items = {}
               for k, v in d.items():
                   new_key = f"{parent_key}{sep}{k}" if parent_key else k
@@ -611,34 +718,41 @@ jobs:
                       items.update(flatten_dict(v, new_key, sep))
                   else:
                       items[new_key] = v
-              return items''',
-               '''assert flatten_dict({"a": {"b": 1, "c": 2}}) == {"a.b": 1, "a.c": 2}
+              return items
+          """),
+          textwrap.dedent("""\
+          assert flatten_dict({"a": {"b": 1, "c": 2}}) == {"a.b": 1, "a.c": 2}
           assert flatten_dict({"x": 1}) == {"x": 1}
           assert flatten_dict({}) == {}
-          assert flatten_dict({"a": {"b": {"c": 3}}}) == {"a.b.c": 3}'''),
+          assert flatten_dict({"a": {"b": {"c": 3}}}) == {"a.b.c": 3}
+          """)),
 
-              ("utility", "roman_to_int", "Roman to Integer",
-               "Convert a Roman numeral string to an integer.",
-               '''def roman_to_int(s: str) -> int:
-              """Convert Roman numeral to integer."""
-              values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
-                        'C': 100, 'D': 500, 'M': 1000}
+          ("utility", "roman_to_int", "Roman to Integer",
+          "Convert a Roman numeral string to an integer.",
+          textwrap.dedent("""\
+          def roman_to_int(s: str) -> int:
+              \"\"\"Convert Roman numeral to integer.\"\"\"
+              values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
               total = 0
               for i in range(len(s)):
                   if i + 1 < len(s) and values[s[i]] < values[s[i + 1]]:
                       total -= values[s[i]]
                   else:
                       total += values[s[i]]
-              return total''',
-               '''assert roman_to_int("III") == 3
+              return total
+          """),
+          textwrap.dedent("""\
+          assert roman_to_int("III") == 3
           assert roman_to_int("IV") == 4
           assert roman_to_int("IX") == 9
-          assert roman_to_int("MCMXCIV") == 1994'''),
+          assert roman_to_int("MCMXCIV") == 1994
+          """)),
 
-              ("utility", "valid_parentheses", "Valid Parentheses",
-               "Check if a string of parentheses is valid (properly opened and closed).",
-               '''def is_valid_parentheses(s: str) -> bool:
-              """Check if parentheses string is valid."""
+          ("utility", "valid_parentheses", "Valid Parentheses",
+          "Check if a string of parentheses is valid.",
+          textwrap.dedent("""\
+          def is_valid_parentheses(s: str) -> bool:
+              \"\"\"Check if parentheses string is valid.\"\"\"
               stack = []
               mapping = {')': '(', ']': '[', '}': '{'}
               for char in s:
@@ -648,35 +762,43 @@ jobs:
                       if not stack or stack[-1] != mapping[char]:
                           return False
                       stack.pop()
-              return len(stack) == 0''',
-               '''assert is_valid_parentheses("()[]{}") == True
+              return len(stack) == 0
+          """),
+          textwrap.dedent("""\
+          assert is_valid_parentheses("()[]{}") == True
           assert is_valid_parentheses("(]") == False
           assert is_valid_parentheses("([)]") == False
           assert is_valid_parentheses("{[]}") == True
-          assert is_valid_parentheses("") == True'''),
+          assert is_valid_parentheses("") == True
+          """)),
 
-              ("utility", "temperature_converter", "Temperature Converter",
-               "Write functions to convert between Celsius, Fahrenheit, and Kelvin.",
-               '''def celsius_to_fahrenheit(c: float) -> float:
-              """Convert Celsius to Fahrenheit."""
+          ("utility", "temperature_converter", "Temperature Converter",
+          "Convert between Celsius, Fahrenheit, and Kelvin.",
+          textwrap.dedent("""\
+          def celsius_to_fahrenheit(c: float) -> float:
+              \"\"\"Convert Celsius to Fahrenheit.\"\"\"
               return round(c * 9/5 + 32, 2)
 
           def fahrenheit_to_celsius(f: float) -> float:
-              """Convert Fahrenheit to Celsius."""
+              \"\"\"Convert Fahrenheit to Celsius.\"\"\"
               return round((f - 32) * 5/9, 2)
 
           def celsius_to_kelvin(c: float) -> float:
-              """Convert Celsius to Kelvin."""
-              return round(c + 273.15, 2)''',
-               '''assert celsius_to_fahrenheit(0) == 32
+              \"\"\"Convert Celsius to Kelvin.\"\"\"
+              return round(c + 273.15, 2)
+          """),
+          textwrap.dedent("""\
+          assert celsius_to_fahrenheit(0) == 32
           assert celsius_to_fahrenheit(100) == 212
           assert fahrenheit_to_celsius(32) == 0
-          assert celsius_to_kelvin(0) == 273.15'''),
+          assert celsius_to_kelvin(0) == 273.15
+          """)),
 
-              ("utility", "password_validator", "Password Strength Validator",
-               "Validate password strength: min 8 chars, uppercase, lowercase, digit, special char.",
-               '''def validate_password(password: str) -> dict:
-              """Check password strength and return detailed results."""
+          ("utility", "password_validator", "Password Strength Validator",
+          "Validate password strength.",
+          textwrap.dedent("""\
+          def validate_password(password: str) -> dict:
+              \"\"\"Check password strength and return detailed results.\"\"\"
               checks = {
                   "min_length": len(password) >= 8,
                   "has_upper": any(c.isupper() for c in password),
@@ -685,17 +807,21 @@ jobs:
                   "has_special": any(not c.isalnum() for c in password),
               }
               checks["is_strong"] = all(checks.values())
-              return checks''',
-               '''result = validate_password("MyP@ssw0rd")
+              return checks
+          """),
+          textwrap.dedent("""\
+          result = validate_password("MyP@ssw0rd")
           assert result["is_strong"] == True
           weak = validate_password("abc")
           assert weak["is_strong"] == False
-          assert weak["min_length"] == False'''),
+          assert weak["min_length"] == False
+          """)),
 
-              ("utility", "count_words_in_file", "Word Counter",
-               "Count total words, unique words, and most common word in a text.",
-               '''def analyze_text(text: str) -> dict:
-              """Analyze text and return word statistics."""
+          ("utility", "text_analyzer", "Text Analyzer",
+          "Count total words, unique words, and most common word in a text.",
+          textwrap.dedent("""\
+          def analyze_text(text: str) -> dict:
+              \"\"\"Analyze text and return word statistics.\"\"\"
               words = text.lower().split()
               freq = {}
               for w in words:
@@ -707,15 +833,18 @@ jobs:
                   "total_words": len(words),
                   "unique_words": len(freq),
                   "most_common": most_common,
-                  "frequencies": freq
-              }''',
-               '''result = analyze_text("the cat sat on the mat")
+                  "frequencies": freq,
+              }
+          """),
+          textwrap.dedent("""\
+          result = analyze_text("the cat sat on the mat")
           assert result["total_words"] == 6
           assert result["unique_words"] == 5
-          assert result["most_common"] == "the"'''),
+          assert result["most_common"] == "the"
+          """)),
           ]
 
-          # ── Track which problems are already solved ──
+          # ── Track solved problems ──
           tracker_path = ".daily/solved.json"
           if os.path.exists(tracker_path):
               with open(tracker_path, "r") as f:
@@ -724,62 +853,37 @@ jobs:
               os.makedirs(".daily", exist_ok=True)
               solved = []
 
-          # Filter out already-solved problems
           available = [(i, p) for i, p in enumerate(PROBLEMS) if p[1] not in solved]
 
-          # If we've exhausted the pool, reset
           if len(available) < num_commits:
-              print("🔄 Resetting problem pool — all problems solved!")
+              print("Resetting problem pool — all problems solved!")
               solved = []
               available = list(enumerate(PROBLEMS))
 
-          # Pick random problems for today
           chosen = random.sample(available, min(num_commits, len(available)))
+          committed = 0
 
           for commit_num, (idx, problem) in enumerate(chosen, 1):
               category, slug, title, description, solution, tests = problem
 
-              # Create directory structure
-              dir_path = f"{category}"
+              dir_path = category
               os.makedirs(dir_path, exist_ok=True)
 
-              # Build the Python file
-              file_content = f'''"""
-          Problem: {title}
-          Category: {category.title()}
-          Date: {today.isoformat()}
-
-          Description:
-              {description}
-          """
-
-
-          {solution}
-
-
-          # ── Tests ──
-          if __name__ == "__main__":
-              {tests}
-              print(f"✅ All tests passed for: {title}")
-          '''
+              file_content = f'"""\nProblem: {title}\nCategory: {category.title()}\nDate: {today.isoformat()}\n\nDescription:\n    {description}\n"""\n\n\n{solution}\n\n# ── Tests ──\nif __name__ == "__main__":\n{textwrap.indent(tests, "    ")}    print(f"All tests passed for: {title}")\n'
 
               file_path = f"{dir_path}/{slug}.py"
               with open(file_path, "w") as f:
                   f.write(file_content)
 
-              # Run the tests to make sure they pass
-              result = subprocess.run(
-                  ["python3", file_path],
-                  capture_output=True, text=True
-              )
+              result = subprocess.run(["python3", file_path], capture_output=True, text=True)
               if result.returncode != 0:
-                  print(f"⚠️  Tests failed for {slug}: {result.stderr}")
+                  print(f"Tests failed for {slug}: {result.stderr}")
                   continue
 
-              # Track as solved
               solved.append(slug)
+              with open(tracker_path, "w") as f:
+                  json.dump(solved, f, indent=2)
 
-              # Commit messages that look natural
               messages = [
                   f"solve: {title} ({category})",
                   f"add {category} problem: {title}",
@@ -790,20 +894,16 @@ jobs:
               ]
               commit_msg = random.choice(messages)
 
-              # Stage and commit
-              subprocess.run(["git", "add", file_path], check=True)
-
-              # Also update tracker
-              with open(tracker_path, "w") as f:
-                  json.dump(solved, f, indent=2)
-              subprocess.run(["git", "add", tracker_path], check=True)
-
+              subprocess.run(["git", "add", file_path, tracker_path], check=True)
               subprocess.run(["git", "commit", "-m", commit_msg], check=True)
-              print(f"  ✅ Commit {commit_num}/{num_commits}: {commit_msg}")
+              committed += 1
+              print(f"  Commit {commit_num}/{num_commits}: {commit_msg}")
 
-          # Push all commits at once
-          subprocess.run(["git", "push"], check=True)
-          print(f"\n🎉 Done! Pushed {len(chosen)} commit(s) for {today}")
+          if committed > 0:
+              subprocess.run(["git", "push"], check=True)
+              print(f"\nDone! Pushed {committed} commit(s) for {today}")
+          else:
+              print("No commits made today.")
           PYTHON_SCRIPT
         env:
           FORCE_RUN: ${{ github.event.inputs.force_run || 'false' }}
