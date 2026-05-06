@@ -1,5 +1,6 @@
 [
   "insertion_sort",
   "fizzbuzz",
-  "flatten_dict"
+  "flatten_dict",
+  "chunk_list"
 ]
