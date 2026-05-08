@@ -4,5 +4,6 @@
   "flatten_dict",
   "chunk_list",
   "remove_duplicates",
-  "invert_dict"
+  "invert_dict",
+  "anagram_check"
 ]
