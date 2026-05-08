@@ -2,5 +2,6 @@
   "insertion_sort",
   "fizzbuzz",
   "flatten_dict",
-  "chunk_list"
+  "chunk_list",
+  "remove_duplicates"
 ]
