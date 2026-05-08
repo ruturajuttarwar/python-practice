@@ -3,5 +3,6 @@
   "fizzbuzz",
   "flatten_dict",
   "chunk_list",
-  "remove_duplicates"
+  "remove_duplicates",
+  "invert_dict"
 ]
