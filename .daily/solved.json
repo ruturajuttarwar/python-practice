@@ -6,5 +6,6 @@
   "remove_duplicates",
   "invert_dict",
   "anagram_check",
-  "fibonacci"
+  "fibonacci",
+  "first_non_repeating"
 ]
