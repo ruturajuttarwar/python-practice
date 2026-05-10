@@ -7,5 +7,6 @@
   "invert_dict",
   "anagram_check",
   "fibonacci",
-  "first_non_repeating"
+  "first_non_repeating",
+  "selection_sort"
 ]
