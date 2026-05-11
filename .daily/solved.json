@@ -10,5 +10,6 @@
   "first_non_repeating",
   "selection_sort",
   "compress_string",
-  "digit_sum"
+  "digit_sum",
+  "valid_parentheses"
 ]
