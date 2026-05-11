@@ -11,5 +11,6 @@
   "selection_sort",
   "compress_string",
   "digit_sum",
-  "valid_parentheses"
+  "valid_parentheses",
+  "caesar_cipher"
 ]
