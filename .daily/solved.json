@@ -12,5 +12,6 @@
   "compress_string",
   "digit_sum",
   "valid_parentheses",
-  "caesar_cipher"
+  "caesar_cipher",
+  "bubble_sort"
 ]
