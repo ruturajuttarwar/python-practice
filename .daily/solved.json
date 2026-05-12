@@ -13,5 +13,6 @@
   "digit_sum",
   "valid_parentheses",
   "caesar_cipher",
-  "bubble_sort"
+  "bubble_sort",
+  "title_case"
 ]
