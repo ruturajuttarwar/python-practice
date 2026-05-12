@@ -14,5 +14,6 @@
   "valid_parentheses",
   "caesar_cipher",
   "bubble_sort",
-  "title_case"
+  "title_case",
+  "merge_sorted"
 ]
