@@ -16,5 +16,6 @@
   "bubble_sort",
   "title_case",
   "merge_sorted",
-  "text_analyzer"
+  "text_analyzer",
+  "group_by"
 ]
