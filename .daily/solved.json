@@ -15,5 +15,6 @@
   "caesar_cipher",
   "bubble_sort",
   "title_case",
-  "merge_sorted"
+  "merge_sorted",
+  "text_analyzer"
 ]
