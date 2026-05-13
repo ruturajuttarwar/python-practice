@@ -17,5 +17,6 @@
   "title_case",
   "merge_sorted",
   "text_analyzer",
-  "group_by"
+  "group_by",
+  "power_of_two"
 ]
