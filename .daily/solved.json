@@ -18,5 +18,6 @@
   "merge_sorted",
   "text_analyzer",
   "group_by",
-  "power_of_two"
+  "power_of_two",
+  "second_largest"
 ]
