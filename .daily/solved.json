@@ -19,5 +19,6 @@
   "text_analyzer",
   "group_by",
   "power_of_two",
-  "second_largest"
+  "second_largest",
+  "temperature_converter"
 ]
