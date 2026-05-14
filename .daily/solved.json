@@ -22,5 +22,6 @@
   "second_largest",
   "temperature_converter",
   "armstrong_number",
-  "merge_dicts"
+  "merge_dicts",
+  "count_vowels"
 ]
