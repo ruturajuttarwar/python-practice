@@ -20,5 +20,6 @@
   "group_by",
   "power_of_two",
   "second_largest",
-  "temperature_converter"
+  "temperature_converter",
+  "armstrong_number"
 ]
