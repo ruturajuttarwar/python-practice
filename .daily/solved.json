@@ -29,5 +29,6 @@
   "matrix_transpose",
   "two_sum",
   "reverse_string",
-  "is_palindrome"
+  "is_palindrome",
+  "prime_check"
 ]
