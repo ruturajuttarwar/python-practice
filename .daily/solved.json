@@ -25,5 +25,6 @@
   "merge_dicts",
   "count_vowels",
   "roman_to_int",
-  "rotate_list"
+  "rotate_list",
+  "matrix_transpose"
 ]
