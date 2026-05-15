@@ -26,5 +26,6 @@
   "count_vowels",
   "roman_to_int",
   "rotate_list",
-  "matrix_transpose"
+  "matrix_transpose",
+  "two_sum"
 ]
