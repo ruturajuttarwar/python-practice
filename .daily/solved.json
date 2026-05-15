@@ -28,5 +28,6 @@
   "rotate_list",
   "matrix_transpose",
   "two_sum",
-  "reverse_string"
+  "reverse_string",
+  "is_palindrome"
 ]
