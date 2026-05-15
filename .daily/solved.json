@@ -24,5 +24,6 @@
   "armstrong_number",
   "merge_dicts",
   "count_vowels",
-  "roman_to_int"
+  "roman_to_int",
+  "rotate_list"
 ]
