@@ -23,5 +23,6 @@
   "temperature_converter",
   "armstrong_number",
   "merge_dicts",
-  "count_vowels"
+  "count_vowels",
+  "roman_to_int"
 ]
