@@ -31,5 +31,6 @@
   "reverse_string",
   "is_palindrome",
   "prime_check",
-  "binary_search"
+  "binary_search",
+  "word_frequency"
 ]
