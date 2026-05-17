@@ -32,5 +32,6 @@
   "is_palindrome",
   "prime_check",
   "binary_search",
-  "word_frequency"
+  "word_frequency",
+  "password_validator"
 ]
