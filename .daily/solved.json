@@ -33,5 +33,6 @@
   "prime_check",
   "binary_search",
   "word_frequency",
-  "password_validator"
+  "password_validator",
+  "gcd_lcm"
 ]
