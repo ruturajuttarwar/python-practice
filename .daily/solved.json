@@ -34,5 +34,6 @@
   "binary_search",
   "word_frequency",
   "password_validator",
-  "gcd_lcm"
+  "gcd_lcm",
+  "flatten_list"
 ]
