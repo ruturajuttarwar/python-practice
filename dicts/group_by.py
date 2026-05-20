@@ -1,7 +1,7 @@
 """
 Problem: Group By Key
 Category: Dicts
-Date: 2026-05-13
+Date: 2026-05-20
 
 Description:
     Group a list of dictionaries by a given key.
