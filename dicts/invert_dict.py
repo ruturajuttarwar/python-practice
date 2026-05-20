@@ -1,7 +1,7 @@
 """
 Problem: Invert Dictionary
 Category: Dicts
-Date: 2026-05-08
+Date: 2026-05-20
 
 Description:
     Swap keys and values of a dictionary.
