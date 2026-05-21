@@ -2,5 +2,6 @@
   "invert_dict",
   "group_by",
   "temperature_converter",
-  "rotate_list"
+  "rotate_list",
+  "reverse_string"
 ]
