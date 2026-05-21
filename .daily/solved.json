@@ -1,5 +1,6 @@
 [
   "invert_dict",
   "group_by",
-  "temperature_converter"
+  "temperature_converter",
+  "rotate_list"
 ]
