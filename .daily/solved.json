@@ -6,5 +6,6 @@
   "reverse_string",
   "armstrong_number",
   "title_case",
-  "compress_string"
+  "compress_string",
+  "is_palindrome"
 ]
