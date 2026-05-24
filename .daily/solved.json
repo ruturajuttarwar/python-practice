@@ -7,5 +7,6 @@
   "armstrong_number",
   "title_case",
   "compress_string",
-  "is_palindrome"
+  "is_palindrome",
+  "fibonacci"
 ]
