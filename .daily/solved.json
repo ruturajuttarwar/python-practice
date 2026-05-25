@@ -8,5 +8,6 @@
   "title_case",
   "compress_string",
   "is_palindrome",
-  "fibonacci"
+  "fibonacci",
+  "merge_sorted"
 ]
