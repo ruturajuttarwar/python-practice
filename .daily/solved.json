@@ -9,5 +9,6 @@
   "compress_string",
   "is_palindrome",
   "fibonacci",
-  "merge_sorted"
+  "merge_sorted",
+  "first_non_repeating"
 ]
