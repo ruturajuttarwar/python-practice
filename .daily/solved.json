@@ -11,5 +11,6 @@
   "fibonacci",
   "merge_sorted",
   "first_non_repeating",
-  "merge_dicts"
+  "merge_dicts",
+  "password_validator"
 ]
