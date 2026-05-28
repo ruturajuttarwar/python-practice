@@ -14,5 +14,6 @@
   "merge_dicts",
   "password_validator",
   "power_of_two",
-  "second_largest"
+  "second_largest",
+  "binary_search"
 ]
