@@ -15,5 +15,6 @@
   "password_validator",
   "power_of_two",
   "second_largest",
-  "binary_search"
+  "binary_search",
+  "selection_sort"
 ]
