@@ -12,5 +12,6 @@
   "merge_sorted",
   "first_non_repeating",
   "merge_dicts",
-  "password_validator"
+  "password_validator",
+  "power_of_two"
 ]
