@@ -17,5 +17,6 @@
   "second_largest",
   "binary_search",
   "selection_sort",
-  "chunk_list"
+  "chunk_list",
+  "roman_to_int"
 ]
