@@ -16,5 +16,6 @@
   "power_of_two",
   "second_largest",
   "binary_search",
-  "selection_sort"
+  "selection_sort",
+  "chunk_list"
 ]
