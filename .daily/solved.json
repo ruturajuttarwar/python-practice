@@ -18,5 +18,6 @@
   "binary_search",
   "selection_sort",
   "chunk_list",
-  "roman_to_int"
+  "roman_to_int",
+  "gcd_lcm"
 ]
