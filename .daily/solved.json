@@ -19,5 +19,6 @@
   "selection_sort",
   "chunk_list",
   "roman_to_int",
-  "gcd_lcm"
+  "gcd_lcm",
+  "flatten_list"
 ]
