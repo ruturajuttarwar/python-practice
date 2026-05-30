@@ -20,5 +20,6 @@
   "chunk_list",
   "roman_to_int",
   "gcd_lcm",
-  "flatten_list"
+  "flatten_list",
+  "remove_duplicates"
 ]
