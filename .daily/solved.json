@@ -21,5 +21,6 @@
   "roman_to_int",
   "gcd_lcm",
   "flatten_list",
-  "remove_duplicates"
+  "remove_duplicates",
+  "digit_sum"
 ]
