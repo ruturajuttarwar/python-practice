@@ -22,5 +22,6 @@
   "gcd_lcm",
   "flatten_list",
   "remove_duplicates",
-  "digit_sum"
+  "digit_sum",
+  "caesar_cipher"
 ]
