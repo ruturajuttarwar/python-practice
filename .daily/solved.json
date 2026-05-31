@@ -27,5 +27,6 @@
   "anagram_check",
   "two_sum",
   "word_frequency",
-  "valid_parentheses"
+  "valid_parentheses",
+  "factorial"
 ]
