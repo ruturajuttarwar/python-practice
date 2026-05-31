@@ -23,5 +23,6 @@
   "flatten_list",
   "remove_duplicates",
   "digit_sum",
-  "caesar_cipher"
+  "caesar_cipher",
+  "anagram_check"
 ]
