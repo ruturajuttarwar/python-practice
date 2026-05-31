@@ -26,5 +26,6 @@
   "caesar_cipher",
   "anagram_check",
   "two_sum",
-  "word_frequency"
+  "word_frequency",
+  "valid_parentheses"
 ]
