@@ -25,5 +25,6 @@
   "digit_sum",
   "caesar_cipher",
   "anagram_check",
-  "two_sum"
+  "two_sum",
+  "word_frequency"
 ]
