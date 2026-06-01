@@ -28,5 +28,6 @@
   "two_sum",
   "word_frequency",
   "valid_parentheses",
-  "factorial"
+  "factorial",
+  "bubble_sort"
 ]
