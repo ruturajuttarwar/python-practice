@@ -30,5 +30,6 @@
   "valid_parentheses",
   "factorial",
   "bubble_sort",
-  "insertion_sort"
+  "insertion_sort",
+  "matrix_transpose"
 ]
