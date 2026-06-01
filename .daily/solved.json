@@ -29,5 +29,6 @@
   "word_frequency",
   "valid_parentheses",
   "factorial",
-  "bubble_sort"
+  "bubble_sort",
+  "insertion_sort"
 ]
