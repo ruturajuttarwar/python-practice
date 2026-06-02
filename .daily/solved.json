@@ -34,5 +34,6 @@
   "matrix_transpose",
   "count_vowels",
   "flatten_dict",
-  "text_analyzer"
+  "text_analyzer",
+  "prime_check"
 ]
