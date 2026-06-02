@@ -31,5 +31,6 @@
   "factorial",
   "bubble_sort",
   "insertion_sort",
-  "matrix_transpose"
+  "matrix_transpose",
+  "count_vowels"
 ]
