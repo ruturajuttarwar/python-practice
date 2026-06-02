@@ -35,5 +35,6 @@
   "count_vowels",
   "flatten_dict",
   "text_analyzer",
-  "prime_check"
+  "prime_check",
+  "fizzbuzz"
 ]
