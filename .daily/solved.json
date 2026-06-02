@@ -33,5 +33,6 @@
   "insertion_sort",
   "matrix_transpose",
   "count_vowels",
-  "flatten_dict"
+  "flatten_dict",
+  "text_analyzer"
 ]
