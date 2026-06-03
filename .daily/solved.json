@@ -1,5 +1,6 @@
 [
   "reverse_string",
   "factorial",
-  "digit_sum"
+  "digit_sum",
+  "power_of_two"
 ]
