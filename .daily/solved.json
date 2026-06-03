@@ -1,4 +1,5 @@
 [
   "reverse_string",
-  "factorial"
+  "factorial",
+  "digit_sum"
 ]
