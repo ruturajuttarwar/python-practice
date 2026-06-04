@@ -6,5 +6,6 @@
   "valid_parentheses",
   "matrix_transpose",
   "fibonacci",
-  "rotate_list"
+  "rotate_list",
+  "prime_check"
 ]
