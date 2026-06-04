@@ -3,5 +3,6 @@
   "factorial",
   "digit_sum",
   "power_of_two",
-  "valid_parentheses"
+  "valid_parentheses",
+  "matrix_transpose"
 ]
