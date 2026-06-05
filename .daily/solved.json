@@ -8,5 +8,6 @@
   "fibonacci",
   "rotate_list",
   "prime_check",
-  "word_frequency"
+  "word_frequency",
+  "group_by"
 ]
