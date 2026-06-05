@@ -9,5 +9,6 @@
   "rotate_list",
   "prime_check",
   "word_frequency",
-  "group_by"
+  "group_by",
+  "selection_sort"
 ]
