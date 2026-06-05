@@ -1,7 +1,7 @@
 """
 Problem: Word Frequency Counter
 Category: Dicts
-Date: 2026-05-31
+Date: 2026-06-05
 
 Description:
     Count the frequency of each word in a given text.

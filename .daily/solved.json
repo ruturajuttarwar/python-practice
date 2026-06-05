@@ -7,5 +7,6 @@
   "matrix_transpose",
   "fibonacci",
   "rotate_list",
-  "prime_check"
+  "prime_check",
+  "word_frequency"
 ]
