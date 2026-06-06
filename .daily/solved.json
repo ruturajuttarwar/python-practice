@@ -11,5 +11,6 @@
   "word_frequency",
   "group_by",
   "selection_sort",
-  "count_vowels"
+  "count_vowels",
+  "gcd_lcm"
 ]
