@@ -10,5 +10,6 @@
   "prime_check",
   "word_frequency",
   "group_by",
-  "selection_sort"
+  "selection_sort",
+  "count_vowels"
 ]
