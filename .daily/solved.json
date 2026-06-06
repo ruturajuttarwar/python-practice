@@ -13,5 +13,6 @@
   "selection_sort",
   "count_vowels",
   "gcd_lcm",
-  "text_analyzer"
+  "text_analyzer",
+  "fizzbuzz"
 ]
