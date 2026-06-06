@@ -1,7 +1,7 @@
 """
 Problem: Flatten Dictionary
 Category: Utility
-Date: 2026-06-02
+Date: 2026-06-06
 
 Description:
     Flatten a nested dictionary with dot-separated keys.

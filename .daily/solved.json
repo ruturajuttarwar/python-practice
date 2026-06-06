@@ -14,5 +14,6 @@
   "count_vowels",
   "gcd_lcm",
   "text_analyzer",
-  "fizzbuzz"
+  "fizzbuzz",
+  "flatten_dict"
 ]
