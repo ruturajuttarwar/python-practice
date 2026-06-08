@@ -19,5 +19,6 @@
   "merge_dicts",
   "caesar_cipher",
   "insertion_sort",
-  "temperature_converter"
+  "temperature_converter",
+  "invert_dict"
 ]
