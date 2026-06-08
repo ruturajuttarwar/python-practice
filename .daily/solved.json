@@ -17,5 +17,6 @@
   "fizzbuzz",
   "flatten_dict",
   "merge_dicts",
-  "caesar_cipher"
+  "caesar_cipher",
+  "insertion_sort"
 ]
