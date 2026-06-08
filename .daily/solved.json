@@ -15,5 +15,6 @@
   "gcd_lcm",
   "text_analyzer",
   "fizzbuzz",
-  "flatten_dict"
+  "flatten_dict",
+  "merge_dicts"
 ]
