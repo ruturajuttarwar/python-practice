@@ -16,5 +16,6 @@
   "text_analyzer",
   "fizzbuzz",
   "flatten_dict",
-  "merge_dicts"
+  "merge_dicts",
+  "caesar_cipher"
 ]
