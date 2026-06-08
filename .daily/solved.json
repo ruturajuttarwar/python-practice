@@ -18,5 +18,6 @@
   "flatten_dict",
   "merge_dicts",
   "caesar_cipher",
-  "insertion_sort"
+  "insertion_sort",
+  "temperature_converter"
 ]
