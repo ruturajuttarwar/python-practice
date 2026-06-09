@@ -20,5 +20,6 @@
   "caesar_cipher",
   "insertion_sort",
   "temperature_converter",
-  "invert_dict"
+  "invert_dict",
+  "first_non_repeating"
 ]
