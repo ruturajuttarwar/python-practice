@@ -25,5 +25,6 @@
   "armstrong_number",
   "merge_sorted",
   "bubble_sort",
-  "compress_string"
+  "compress_string",
+  "remove_duplicates"
 ]
