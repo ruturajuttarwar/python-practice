@@ -22,5 +22,6 @@
   "temperature_converter",
   "invert_dict",
   "first_non_repeating",
-  "armstrong_number"
+  "armstrong_number",
+  "merge_sorted"
 ]
