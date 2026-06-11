@@ -24,5 +24,6 @@
   "first_non_repeating",
   "armstrong_number",
   "merge_sorted",
-  "bubble_sort"
+  "bubble_sort",
+  "compress_string"
 ]
