@@ -23,5 +23,6 @@
   "invert_dict",
   "first_non_repeating",
   "armstrong_number",
-  "merge_sorted"
+  "merge_sorted",
+  "bubble_sort"
 ]
