@@ -27,5 +27,6 @@
   "bubble_sort",
   "compress_string",
   "remove_duplicates",
-  "flatten_list"
+  "flatten_list",
+  "anagram_check"
 ]
