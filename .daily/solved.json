@@ -28,5 +28,6 @@
   "compress_string",
   "remove_duplicates",
   "flatten_list",
-  "anagram_check"
+  "anagram_check",
+  "roman_to_int"
 ]
