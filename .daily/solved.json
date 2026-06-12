@@ -26,5 +26,6 @@
   "merge_sorted",
   "bubble_sort",
   "compress_string",
-  "remove_duplicates"
+  "remove_duplicates",
+  "flatten_list"
 ]
