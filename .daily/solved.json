@@ -30,5 +30,6 @@
   "flatten_list",
   "anagram_check",
   "roman_to_int",
-  "second_largest"
+  "second_largest",
+  "password_validator"
 ]
