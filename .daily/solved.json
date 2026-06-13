@@ -31,5 +31,6 @@
   "anagram_check",
   "roman_to_int",
   "second_largest",
-  "password_validator"
+  "password_validator",
+  "is_palindrome"
 ]
