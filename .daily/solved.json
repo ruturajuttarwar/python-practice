@@ -32,5 +32,6 @@
   "roman_to_int",
   "second_largest",
   "password_validator",
-  "is_palindrome"
+  "is_palindrome",
+  "chunk_list"
 ]
