@@ -33,5 +33,6 @@
   "second_largest",
   "password_validator",
   "is_palindrome",
-  "chunk_list"
+  "chunk_list",
+  "title_case"
 ]
