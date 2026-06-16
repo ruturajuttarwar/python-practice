@@ -1,5 +1,6 @@
 [
   "is_palindrome",
   "power_of_two",
-  "password_validator"
+  "password_validator",
+  "reverse_string"
 ]
