@@ -2,5 +2,6 @@
   "is_palindrome",
   "power_of_two",
   "password_validator",
-  "reverse_string"
+  "reverse_string",
+  "merge_dicts"
 ]
