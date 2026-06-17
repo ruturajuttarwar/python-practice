@@ -4,5 +4,6 @@
   "password_validator",
   "reverse_string",
   "merge_dicts",
-  "factorial"
+  "factorial",
+  "title_case"
 ]
