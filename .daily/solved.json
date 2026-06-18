@@ -7,5 +7,6 @@
   "factorial",
   "title_case",
   "first_non_repeating",
-  "compress_string"
+  "compress_string",
+  "remove_duplicates"
 ]
