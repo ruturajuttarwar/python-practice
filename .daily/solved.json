@@ -6,5 +6,6 @@
   "merge_dicts",
   "factorial",
   "title_case",
-  "first_non_repeating"
+  "first_non_repeating",
+  "compress_string"
 ]
