@@ -8,5 +8,6 @@
   "title_case",
   "first_non_repeating",
   "compress_string",
-  "remove_duplicates"
+  "remove_duplicates",
+  "second_largest"
 ]
