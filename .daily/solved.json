@@ -11,5 +11,6 @@
   "remove_duplicates",
   "second_largest",
   "merge_sorted",
-  "prime_check"
+  "prime_check",
+  "caesar_cipher"
 ]
