@@ -14,5 +14,6 @@
   "prime_check",
   "caesar_cipher",
   "selection_sort",
-  "flatten_dict"
+  "flatten_dict",
+  "invert_dict"
 ]
