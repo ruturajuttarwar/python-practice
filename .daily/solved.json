@@ -10,5 +10,6 @@
   "compress_string",
   "remove_duplicates",
   "second_largest",
-  "merge_sorted"
+  "merge_sorted",
+  "prime_check"
 ]
