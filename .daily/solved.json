@@ -9,5 +9,6 @@
   "first_non_repeating",
   "compress_string",
   "remove_duplicates",
-  "second_largest"
+  "second_largest",
+  "merge_sorted"
 ]
