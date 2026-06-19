@@ -13,5 +13,6 @@
   "merge_sorted",
   "prime_check",
   "caesar_cipher",
-  "selection_sort"
+  "selection_sort",
+  "flatten_dict"
 ]
