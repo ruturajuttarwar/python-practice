@@ -15,5 +15,6 @@
   "caesar_cipher",
   "selection_sort",
   "flatten_dict",
-  "invert_dict"
+  "invert_dict",
+  "two_sum"
 ]
