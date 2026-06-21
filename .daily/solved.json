@@ -16,5 +16,6 @@
   "selection_sort",
   "flatten_dict",
   "invert_dict",
-  "two_sum"
+  "two_sum",
+  "valid_parentheses"
 ]
