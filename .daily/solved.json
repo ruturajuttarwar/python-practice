@@ -18,5 +18,6 @@
   "invert_dict",
   "two_sum",
   "valid_parentheses",
-  "fibonacci"
+  "fibonacci",
+  "chunk_list"
 ]
