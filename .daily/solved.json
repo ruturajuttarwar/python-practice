@@ -17,5 +17,6 @@
   "flatten_dict",
   "invert_dict",
   "two_sum",
-  "valid_parentheses"
+  "valid_parentheses",
+  "fibonacci"
 ]
