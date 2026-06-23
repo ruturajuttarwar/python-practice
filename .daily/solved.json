@@ -23,5 +23,6 @@
   "roman_to_int",
   "rotate_list",
   "count_vowels",
-  "binary_search"
+  "binary_search",
+  "fizzbuzz"
 ]
