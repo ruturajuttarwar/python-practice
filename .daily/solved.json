@@ -21,5 +21,6 @@
   "fibonacci",
   "chunk_list",
   "roman_to_int",
-  "rotate_list"
+  "rotate_list",
+  "count_vowels"
 ]
