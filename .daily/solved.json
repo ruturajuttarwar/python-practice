@@ -22,5 +22,6 @@
   "chunk_list",
   "roman_to_int",
   "rotate_list",
-  "count_vowels"
+  "count_vowels",
+  "binary_search"
 ]
