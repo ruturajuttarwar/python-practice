@@ -19,5 +19,6 @@
   "two_sum",
   "valid_parentheses",
   "fibonacci",
-  "chunk_list"
+  "chunk_list",
+  "roman_to_int"
 ]
