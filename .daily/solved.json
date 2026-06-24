@@ -25,5 +25,6 @@
   "count_vowels",
   "binary_search",
   "fizzbuzz",
-  "text_analyzer"
+  "text_analyzer",
+  "word_frequency"
 ]
