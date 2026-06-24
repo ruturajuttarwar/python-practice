@@ -26,5 +26,6 @@
   "binary_search",
   "fizzbuzz",
   "text_analyzer",
-  "word_frequency"
+  "word_frequency",
+  "group_by"
 ]
