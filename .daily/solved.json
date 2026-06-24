@@ -24,5 +24,6 @@
   "rotate_list",
   "count_vowels",
   "binary_search",
-  "fizzbuzz"
+  "fizzbuzz",
+  "text_analyzer"
 ]
