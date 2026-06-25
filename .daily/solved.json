@@ -27,5 +27,6 @@
   "fizzbuzz",
   "text_analyzer",
   "word_frequency",
-  "group_by"
+  "group_by",
+  "digit_sum"
 ]
