@@ -28,5 +28,6 @@
   "text_analyzer",
   "word_frequency",
   "group_by",
-  "digit_sum"
+  "digit_sum",
+  "flatten_list"
 ]
