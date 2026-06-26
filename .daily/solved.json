@@ -32,5 +32,6 @@
   "flatten_list",
   "armstrong_number",
   "bubble_sort",
-  "gcd_lcm"
+  "gcd_lcm",
+  "matrix_transpose"
 ]

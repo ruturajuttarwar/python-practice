@@ -1,7 +1,7 @@
 """
 Problem: Matrix Transpose
 Category: Utility
-Date: 2026-06-04
+Date: 2026-06-26
 
 Description:
     Transpose a matrix (list of lists).
