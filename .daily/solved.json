@@ -30,5 +30,6 @@
   "group_by",
   "digit_sum",
   "flatten_list",
-  "armstrong_number"
+  "armstrong_number",
+  "bubble_sort"
 ]
