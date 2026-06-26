@@ -1,7 +1,7 @@
 """
 Problem: Insertion Sort
 Category: Sorting
-Date: 2026-06-08
+Date: 2026-06-26
 
 Description:
     Implement the insertion sort algorithm.

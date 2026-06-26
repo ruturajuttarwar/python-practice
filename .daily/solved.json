@@ -33,5 +33,6 @@
   "armstrong_number",
   "bubble_sort",
   "gcd_lcm",
-  "matrix_transpose"
+  "matrix_transpose",
+  "insertion_sort"
 ]
