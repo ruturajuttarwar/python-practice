@@ -29,5 +29,6 @@
   "word_frequency",
   "group_by",
   "digit_sum",
-  "flatten_list"
+  "flatten_list",
+  "armstrong_number"
 ]
