@@ -2,5 +2,6 @@
   "valid_parentheses",
   "merge_sorted",
   "first_non_repeating",
-  "group_by"
+  "group_by",
+  "is_palindrome"
 ]
