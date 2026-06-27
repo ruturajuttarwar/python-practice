@@ -1,4 +1,5 @@
 [
   "valid_parentheses",
-  "merge_sorted"
+  "merge_sorted",
+  "first_non_repeating"
 ]
