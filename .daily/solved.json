@@ -1,5 +1,6 @@
 [
   "valid_parentheses",
   "merge_sorted",
-  "first_non_repeating"
+  "first_non_repeating",
+  "group_by"
 ]
