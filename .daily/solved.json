@@ -6,5 +6,6 @@
   "is_palindrome",
   "flatten_list",
   "caesar_cipher",
-  "second_largest"
+  "second_largest",
+  "word_frequency"
 ]
