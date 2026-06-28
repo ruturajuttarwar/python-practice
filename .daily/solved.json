@@ -4,5 +4,6 @@
   "first_non_repeating",
   "group_by",
   "is_palindrome",
-  "flatten_list"
+  "flatten_list",
+  "caesar_cipher"
 ]
