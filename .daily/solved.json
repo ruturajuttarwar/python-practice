@@ -7,5 +7,6 @@
   "flatten_list",
   "caesar_cipher",
   "second_largest",
-  "word_frequency"
+  "word_frequency",
+  "title_case"
 ]

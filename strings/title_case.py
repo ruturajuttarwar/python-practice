@@ -1,7 +1,7 @@
 """
 Problem: Title Case Converter
 Category: Strings
-Date: 2026-06-17
+Date: 2026-06-28
 
 Description:
     Convert a string to title case without using the built-in title() method.
