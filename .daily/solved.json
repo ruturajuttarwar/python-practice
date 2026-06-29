@@ -10,5 +10,6 @@
   "word_frequency",
   "title_case",
   "bubble_sort",
-  "chunk_list"
+  "chunk_list",
+  "text_analyzer"
 ]
