@@ -8,5 +8,6 @@
   "caesar_cipher",
   "second_largest",
   "word_frequency",
-  "title_case"
+  "title_case",
+  "bubble_sort"
 ]
