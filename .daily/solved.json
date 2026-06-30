@@ -12,5 +12,6 @@
   "bubble_sort",
   "chunk_list",
   "text_analyzer",
-  "password_validator"
+  "password_validator",
+  "rotate_list"
 ]
