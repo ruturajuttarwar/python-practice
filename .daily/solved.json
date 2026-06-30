@@ -11,5 +11,6 @@
   "title_case",
   "bubble_sort",
   "chunk_list",
-  "text_analyzer"
+  "text_analyzer",
+  "password_validator"
 ]
