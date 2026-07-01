@@ -13,5 +13,6 @@
   "chunk_list",
   "text_analyzer",
   "password_validator",
-  "rotate_list"
+  "rotate_list",
+  "factorial"
 ]
