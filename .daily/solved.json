@@ -14,5 +14,6 @@
   "text_analyzer",
   "password_validator",
   "rotate_list",
-  "factorial"
+  "factorial",
+  "binary_search"
 ]
