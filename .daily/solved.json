@@ -15,5 +15,6 @@
   "password_validator",
   "rotate_list",
   "factorial",
-  "binary_search"
+  "binary_search",
+  "invert_dict"
 ]
