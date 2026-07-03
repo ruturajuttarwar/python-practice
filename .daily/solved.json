@@ -16,5 +16,6 @@
   "rotate_list",
   "factorial",
   "binary_search",
-  "invert_dict"
+  "invert_dict",
+  "flatten_dict"
 ]
