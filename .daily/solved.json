@@ -17,5 +17,6 @@
   "factorial",
   "binary_search",
   "invert_dict",
-  "flatten_dict"
+  "flatten_dict",
+  "gcd_lcm"
 ]
