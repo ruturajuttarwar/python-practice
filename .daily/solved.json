@@ -18,5 +18,6 @@
   "binary_search",
   "invert_dict",
   "flatten_dict",
-  "gcd_lcm"
+  "gcd_lcm",
+  "digit_sum"
 ]
