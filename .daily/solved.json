@@ -19,5 +19,6 @@
   "invert_dict",
   "flatten_dict",
   "gcd_lcm",
-  "digit_sum"
+  "digit_sum",
+  "prime_check"
 ]
