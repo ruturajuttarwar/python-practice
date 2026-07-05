@@ -1,7 +1,7 @@
 """
 Problem: Count Vowels
 Category: Strings
-Date: 2026-06-23
+Date: 2026-07-05
 
 Description:
     Count the number of vowels in a string.

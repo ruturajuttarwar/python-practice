@@ -22,5 +22,6 @@
   "digit_sum",
   "prime_check",
   "insertion_sort",
-  "merge_dicts"
+  "merge_dicts",
+  "count_vowels"
 ]
