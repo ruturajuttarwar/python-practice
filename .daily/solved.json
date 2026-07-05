@@ -21,5 +21,6 @@
   "gcd_lcm",
   "digit_sum",
   "prime_check",
-  "insertion_sort"
+  "insertion_sort",
+  "merge_dicts"
 ]
