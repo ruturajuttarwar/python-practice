@@ -20,5 +20,6 @@
   "flatten_dict",
   "gcd_lcm",
   "digit_sum",
-  "prime_check"
+  "prime_check",
+  "insertion_sort"
 ]
