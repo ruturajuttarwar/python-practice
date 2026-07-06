@@ -23,5 +23,6 @@
   "prime_check",
   "insertion_sort",
   "merge_dicts",
-  "count_vowels"
+  "count_vowels",
+  "matrix_transpose"
 ]
