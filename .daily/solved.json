@@ -24,5 +24,6 @@
   "insertion_sort",
   "merge_dicts",
   "count_vowels",
-  "matrix_transpose"
+  "matrix_transpose",
+  "reverse_string"
 ]
