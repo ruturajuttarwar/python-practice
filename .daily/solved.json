@@ -25,5 +25,6 @@
   "merge_dicts",
   "count_vowels",
   "matrix_transpose",
-  "reverse_string"
+  "reverse_string",
+  "anagram_check"
 ]
