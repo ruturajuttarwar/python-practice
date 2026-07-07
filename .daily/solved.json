@@ -26,5 +26,6 @@
   "count_vowels",
   "matrix_transpose",
   "reverse_string",
-  "anagram_check"
+  "anagram_check",
+  "fizzbuzz"
 ]
