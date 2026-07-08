@@ -29,5 +29,6 @@
   "anagram_check",
   "fizzbuzz",
   "power_of_two",
-  "remove_duplicates"
+  "remove_duplicates",
+  "compress_string"
 ]
