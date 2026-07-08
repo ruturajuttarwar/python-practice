@@ -30,5 +30,6 @@
   "fizzbuzz",
   "power_of_two",
   "remove_duplicates",
-  "compress_string"
+  "compress_string",
+  "selection_sort"
 ]
