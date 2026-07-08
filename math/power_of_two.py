@@ -1,7 +1,7 @@
 """
 Problem: Power of Two
 Category: Math
-Date: 2026-06-15
+Date: 2026-07-08
 
 Description:
     Check if a given number is a power of two using bit manipulation.

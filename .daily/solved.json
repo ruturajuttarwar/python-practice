@@ -27,5 +27,6 @@
   "matrix_transpose",
   "reverse_string",
   "anagram_check",
-  "fizzbuzz"
+  "fizzbuzz",
+  "power_of_two"
 ]
