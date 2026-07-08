@@ -28,5 +28,6 @@
   "reverse_string",
   "anagram_check",
   "fizzbuzz",
-  "power_of_two"
+  "power_of_two",
+  "remove_duplicates"
 ]
