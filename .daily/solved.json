@@ -33,5 +33,6 @@
   "compress_string",
   "selection_sort",
   "temperature_converter",
-  "armstrong_number"
+  "armstrong_number",
+  "fibonacci"
 ]
