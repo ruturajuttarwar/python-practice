@@ -1,5 +1,6 @@
 [
   "is_palindrome",
   "flatten_list",
-  "count_vowels"
+  "count_vowels",
+  "invert_dict"
 ]
