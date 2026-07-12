@@ -4,5 +4,6 @@
   "count_vowels",
   "invert_dict",
   "power_of_two",
-  "second_largest"
+  "second_largest",
+  "remove_duplicates"
 ]
