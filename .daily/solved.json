@@ -3,5 +3,6 @@
   "flatten_list",
   "count_vowels",
   "invert_dict",
-  "power_of_two"
+  "power_of_two",
+  "second_largest"
 ]
