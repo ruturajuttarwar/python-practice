@@ -2,5 +2,6 @@
   "is_palindrome",
   "flatten_list",
   "count_vowels",
-  "invert_dict"
+  "invert_dict",
+  "power_of_two"
 ]
