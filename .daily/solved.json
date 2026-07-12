@@ -6,5 +6,6 @@
   "power_of_two",
   "second_largest",
   "remove_duplicates",
-  "binary_search"
+  "binary_search",
+  "digit_sum"
 ]
