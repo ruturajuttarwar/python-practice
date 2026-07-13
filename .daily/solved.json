@@ -7,5 +7,6 @@
   "second_largest",
   "remove_duplicates",
   "binary_search",
-  "digit_sum"
+  "digit_sum",
+  "prime_check"
 ]
