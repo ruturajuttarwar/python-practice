@@ -11,5 +11,6 @@
   "prime_check",
   "fizzbuzz",
   "chunk_list",
-  "factorial"
+  "factorial",
+  "flatten_dict"
 ]
