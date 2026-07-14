@@ -10,5 +10,6 @@
   "digit_sum",
   "prime_check",
   "fizzbuzz",
-  "chunk_list"
+  "chunk_list",
+  "factorial"
 ]
