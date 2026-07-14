@@ -12,5 +12,6 @@
   "fizzbuzz",
   "chunk_list",
   "factorial",
-  "flatten_dict"
+  "flatten_dict",
+  "matrix_transpose"
 ]
