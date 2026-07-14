@@ -1,7 +1,7 @@
 """
 Problem: Chunk List
 Category: Lists
-Date: 2026-06-29
+Date: 2026-07-14
 
 Description:
     Split a list into chunks of a given size.

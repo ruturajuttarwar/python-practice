@@ -9,5 +9,6 @@
   "binary_search",
   "digit_sum",
   "prime_check",
-  "fizzbuzz"
+  "fizzbuzz",
+  "chunk_list"
 ]
