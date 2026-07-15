@@ -13,5 +13,6 @@
   "chunk_list",
   "factorial",
   "flatten_dict",
-  "matrix_transpose"
+  "matrix_transpose",
+  "roman_to_int"
 ]
