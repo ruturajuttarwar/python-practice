@@ -14,5 +14,6 @@
   "factorial",
   "flatten_dict",
   "matrix_transpose",
-  "roman_to_int"
+  "roman_to_int",
+  "gcd_lcm"
 ]
