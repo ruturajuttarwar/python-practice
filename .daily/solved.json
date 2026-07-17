@@ -16,5 +16,6 @@
   "matrix_transpose",
   "roman_to_int",
   "gcd_lcm",
-  "valid_parentheses"
+  "valid_parentheses",
+  "merge_sorted"
 ]
