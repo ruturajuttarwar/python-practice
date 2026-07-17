@@ -15,5 +15,6 @@
   "flatten_dict",
   "matrix_transpose",
   "roman_to_int",
-  "gcd_lcm"
+  "gcd_lcm",
+  "valid_parentheses"
 ]
