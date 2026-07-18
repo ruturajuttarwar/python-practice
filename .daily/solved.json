@@ -17,5 +17,6 @@
   "roman_to_int",
   "gcd_lcm",
   "valid_parentheses",
-  "merge_sorted"
+  "merge_sorted",
+  "reverse_string"
 ]
