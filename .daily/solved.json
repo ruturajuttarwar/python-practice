@@ -21,5 +21,6 @@
   "reverse_string",
   "group_by",
   "selection_sort",
-  "first_non_repeating"
+  "first_non_repeating",
+  "insertion_sort"
 ]
