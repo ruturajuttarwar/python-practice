@@ -19,5 +19,6 @@
   "valid_parentheses",
   "merge_sorted",
   "reverse_string",
-  "group_by"
+  "group_by",
+  "selection_sort"
 ]
