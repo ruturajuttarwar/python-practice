@@ -20,5 +20,6 @@
   "merge_sorted",
   "reverse_string",
   "group_by",
-  "selection_sort"
+  "selection_sort",
+  "first_non_repeating"
 ]
