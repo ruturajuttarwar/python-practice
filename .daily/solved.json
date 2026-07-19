@@ -27,5 +27,6 @@
   "password_validator",
   "anagram_check",
   "caesar_cipher",
-  "armstrong_number"
+  "armstrong_number",
+  "rotate_list"
 ]
