@@ -28,5 +28,6 @@
   "anagram_check",
   "caesar_cipher",
   "armstrong_number",
-  "rotate_list"
+  "rotate_list",
+  "temperature_converter"
 ]
