@@ -25,5 +25,6 @@
   "insertion_sort",
   "word_frequency",
   "password_validator",
-  "anagram_check"
+  "anagram_check",
+  "caesar_cipher"
 ]
