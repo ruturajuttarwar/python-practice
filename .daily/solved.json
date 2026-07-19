@@ -22,5 +22,6 @@
   "group_by",
   "selection_sort",
   "first_non_repeating",
-  "insertion_sort"
+  "insertion_sort",
+  "word_frequency"
 ]
