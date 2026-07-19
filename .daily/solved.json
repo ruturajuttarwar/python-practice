@@ -26,5 +26,6 @@
   "word_frequency",
   "password_validator",
   "anagram_check",
-  "caesar_cipher"
+  "caesar_cipher",
+  "armstrong_number"
 ]
