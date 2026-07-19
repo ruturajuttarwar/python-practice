@@ -23,5 +23,6 @@
   "selection_sort",
   "first_non_repeating",
   "insertion_sort",
-  "word_frequency"
+  "word_frequency",
+  "password_validator"
 ]
