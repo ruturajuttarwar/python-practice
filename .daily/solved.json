@@ -24,5 +24,6 @@
   "first_non_repeating",
   "insertion_sort",
   "word_frequency",
-  "password_validator"
+  "password_validator",
+  "anagram_check"
 ]
