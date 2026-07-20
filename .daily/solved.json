@@ -31,5 +31,6 @@
   "rotate_list",
   "temperature_converter",
   "text_analyzer",
-  "two_sum"
+  "two_sum",
+  "title_case"
 ]
