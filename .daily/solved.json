@@ -32,5 +32,6 @@
   "temperature_converter",
   "text_analyzer",
   "two_sum",
-  "title_case"
+  "title_case",
+  "bubble_sort"
 ]
