@@ -30,5 +30,6 @@
   "armstrong_number",
   "rotate_list",
   "temperature_converter",
-  "text_analyzer"
+  "text_analyzer",
+  "two_sum"
 ]
