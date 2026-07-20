@@ -29,5 +29,6 @@
   "caesar_cipher",
   "armstrong_number",
   "rotate_list",
-  "temperature_converter"
+  "temperature_converter",
+  "text_analyzer"
 ]
