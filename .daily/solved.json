@@ -1,5 +1,6 @@
 [
   "anagram_check",
   "matrix_transpose",
-  "factorial"
+  "factorial",
+  "first_non_repeating"
 ]
