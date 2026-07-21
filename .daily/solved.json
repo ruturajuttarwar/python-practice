@@ -1,4 +1,5 @@
 [
   "anagram_check",
-  "matrix_transpose"
+  "matrix_transpose",
+  "factorial"
 ]
