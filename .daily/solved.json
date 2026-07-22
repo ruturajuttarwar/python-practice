@@ -3,5 +3,6 @@
   "matrix_transpose",
   "factorial",
   "first_non_repeating",
-  "title_case"
+  "title_case",
+  "fizzbuzz"
 ]
