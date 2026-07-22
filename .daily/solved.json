@@ -2,5 +2,6 @@
   "anagram_check",
   "matrix_transpose",
   "factorial",
-  "first_non_repeating"
+  "first_non_repeating",
+  "title_case"
 ]
