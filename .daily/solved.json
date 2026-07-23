@@ -9,5 +9,6 @@
   "password_validator",
   "selection_sort",
   "prime_check",
-  "rotate_list"
+  "rotate_list",
+  "insertion_sort"
 ]
