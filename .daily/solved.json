@@ -6,5 +6,6 @@
   "title_case",
   "fizzbuzz",
   "bubble_sort",
-  "password_validator"
+  "password_validator",
+  "selection_sort"
 ]
