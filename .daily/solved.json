@@ -5,5 +5,6 @@
   "first_non_repeating",
   "title_case",
   "fizzbuzz",
-  "bubble_sort"
+  "bubble_sort",
+  "password_validator"
 ]
