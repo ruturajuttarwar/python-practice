@@ -4,5 +4,6 @@
   "factorial",
   "first_non_repeating",
   "title_case",
-  "fizzbuzz"
+  "fizzbuzz",
+  "bubble_sort"
 ]

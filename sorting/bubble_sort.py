@@ -1,7 +1,7 @@
 """
 Problem: Bubble Sort
 Category: Sorting
-Date: 2026-07-20
+Date: 2026-07-23
 
 Description:
     Implement the bubble sort algorithm.
