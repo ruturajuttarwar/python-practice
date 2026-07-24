@@ -11,5 +11,6 @@
   "prime_check",
   "rotate_list",
   "insertion_sort",
-  "gcd_lcm"
+  "gcd_lcm",
+  "text_analyzer"
 ]
