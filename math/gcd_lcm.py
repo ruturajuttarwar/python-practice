@@ -1,7 +1,7 @@
 """
 Problem: GCD and LCM
 Category: Math
-Date: 2026-07-15
+Date: 2026-07-24
 
 Description:
     Compute the Greatest Common Divisor and Least Common Multiple.

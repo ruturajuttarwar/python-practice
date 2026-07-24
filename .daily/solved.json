@@ -10,5 +10,6 @@
   "selection_sort",
   "prime_check",
   "rotate_list",
-  "insertion_sort"
+  "insertion_sort",
+  "gcd_lcm"
 ]
