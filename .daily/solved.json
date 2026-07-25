@@ -12,5 +12,6 @@
   "rotate_list",
   "insertion_sort",
   "gcd_lcm",
-  "text_analyzer"
+  "text_analyzer",
+  "valid_parentheses"
 ]
