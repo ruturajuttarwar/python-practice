@@ -13,5 +13,6 @@
   "insertion_sort",
   "gcd_lcm",
   "text_analyzer",
-  "valid_parentheses"
+  "valid_parentheses",
+  "binary_search"
 ]
