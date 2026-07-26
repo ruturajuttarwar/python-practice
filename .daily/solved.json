@@ -19,5 +19,6 @@
   "roman_to_int",
   "flatten_dict",
   "temperature_converter",
-  "remove_duplicates"
+  "remove_duplicates",
+  "flatten_list"
 ]
