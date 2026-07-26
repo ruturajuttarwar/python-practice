@@ -15,5 +15,6 @@
   "text_analyzer",
   "valid_parentheses",
   "binary_search",
-  "compress_string"
+  "compress_string",
+  "roman_to_int"
 ]
