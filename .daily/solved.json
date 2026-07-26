@@ -16,5 +16,6 @@
   "valid_parentheses",
   "binary_search",
   "compress_string",
-  "roman_to_int"
+  "roman_to_int",
+  "flatten_dict"
 ]
