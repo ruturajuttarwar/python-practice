@@ -18,5 +18,6 @@
   "compress_string",
   "roman_to_int",
   "flatten_dict",
-  "temperature_converter"
+  "temperature_converter",
+  "remove_duplicates"
 ]
