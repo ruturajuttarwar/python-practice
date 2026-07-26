@@ -14,5 +14,6 @@
   "gcd_lcm",
   "text_analyzer",
   "valid_parentheses",
-  "binary_search"
+  "binary_search",
+  "compress_string"
 ]
