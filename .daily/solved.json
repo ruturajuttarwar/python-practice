@@ -23,5 +23,6 @@
   "flatten_list",
   "invert_dict",
   "merge_dicts",
-  "two_sum"
+  "two_sum",
+  "caesar_cipher"
 ]
