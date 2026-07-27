@@ -21,5 +21,6 @@
   "temperature_converter",
   "remove_duplicates",
   "flatten_list",
-  "invert_dict"
+  "invert_dict",
+  "merge_dicts"
 ]
