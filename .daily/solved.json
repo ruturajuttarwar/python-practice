@@ -22,5 +22,6 @@
   "remove_duplicates",
   "flatten_list",
   "invert_dict",
-  "merge_dicts"
+  "merge_dicts",
+  "two_sum"
 ]
