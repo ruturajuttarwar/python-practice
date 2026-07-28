@@ -24,5 +24,6 @@
   "invert_dict",
   "merge_dicts",
   "two_sum",
-  "caesar_cipher"
+  "caesar_cipher",
+  "second_largest"
 ]
