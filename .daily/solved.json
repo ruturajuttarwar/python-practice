@@ -25,5 +25,6 @@
   "merge_dicts",
   "two_sum",
   "caesar_cipher",
-  "second_largest"
+  "second_largest",
+  "digit_sum"
 ]
