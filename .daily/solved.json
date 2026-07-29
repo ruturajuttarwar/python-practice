@@ -28,5 +28,6 @@
   "second_largest",
   "digit_sum",
   "word_frequency",
-  "fibonacci"
+  "fibonacci",
+  "group_by"
 ]
