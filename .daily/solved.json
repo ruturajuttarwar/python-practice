@@ -27,5 +27,6 @@
   "caesar_cipher",
   "second_largest",
   "digit_sum",
-  "word_frequency"
+  "word_frequency",
+  "fibonacci"
 ]
