@@ -26,5 +26,6 @@
   "two_sum",
   "caesar_cipher",
   "second_largest",
-  "digit_sum"
+  "digit_sum",
+  "word_frequency"
 ]
