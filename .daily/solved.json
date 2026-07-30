@@ -29,5 +29,6 @@
   "digit_sum",
   "word_frequency",
   "fibonacci",
-  "group_by"
+  "group_by",
+  "is_palindrome"
 ]
