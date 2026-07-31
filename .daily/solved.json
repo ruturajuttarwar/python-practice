@@ -34,5 +34,6 @@
   "power_of_two",
   "count_vowels",
   "armstrong_number",
-  "merge_sorted"
+  "merge_sorted",
+  "reverse_string"
 ]
