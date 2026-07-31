@@ -31,5 +31,6 @@
   "fibonacci",
   "group_by",
   "is_palindrome",
-  "power_of_two"
+  "power_of_two",
+  "count_vowels"
 ]
