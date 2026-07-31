@@ -35,5 +35,6 @@
   "count_vowels",
   "armstrong_number",
   "merge_sorted",
-  "reverse_string"
+  "reverse_string",
+  "chunk_list"
 ]
