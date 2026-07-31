@@ -33,5 +33,6 @@
   "is_palindrome",
   "power_of_two",
   "count_vowels",
-  "armstrong_number"
+  "armstrong_number",
+  "merge_sorted"
 ]
