@@ -30,5 +30,6 @@
   "word_frequency",
   "fibonacci",
   "group_by",
-  "is_palindrome"
+  "is_palindrome",
+  "power_of_two"
 ]
