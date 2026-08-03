@@ -1,4 +1,5 @@
 [
   "remove_duplicates",
-  "flatten_list"
+  "flatten_list",
+  "valid_parentheses"
 ]
