@@ -2,5 +2,6 @@
   "remove_duplicates",
   "flatten_list",
   "valid_parentheses",
-  "is_palindrome"
+  "is_palindrome",
+  "anagram_check"
 ]
