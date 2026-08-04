@@ -3,5 +3,6 @@
   "flatten_list",
   "valid_parentheses",
   "is_palindrome",
-  "anagram_check"
+  "anagram_check",
+  "group_by"
 ]
