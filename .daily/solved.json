@@ -6,5 +6,6 @@
   "anagram_check",
   "group_by",
   "binary_search",
-  "password_validator"
+  "password_validator",
+  "count_vowels"
 ]
