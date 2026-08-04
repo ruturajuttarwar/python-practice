@@ -4,5 +4,6 @@
   "valid_parentheses",
   "is_palindrome",
   "anagram_check",
-  "group_by"
+  "group_by",
+  "binary_search"
 ]
