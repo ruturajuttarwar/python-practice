@@ -9,5 +9,6 @@
   "password_validator",
   "count_vowels",
   "roman_to_int",
-  "power_of_two"
+  "power_of_two",
+  "fibonacci"
 ]
