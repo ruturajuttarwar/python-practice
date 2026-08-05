@@ -11,5 +11,6 @@
   "roman_to_int",
   "power_of_two",
   "fibonacci",
-  "title_case"
+  "title_case",
+  "reverse_string"
 ]
