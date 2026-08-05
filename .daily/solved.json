@@ -12,5 +12,6 @@
   "power_of_two",
   "fibonacci",
   "title_case",
-  "reverse_string"
+  "reverse_string",
+  "first_non_repeating"
 ]
