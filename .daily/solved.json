@@ -10,5 +10,6 @@
   "count_vowels",
   "roman_to_int",
   "power_of_two",
-  "fibonacci"
+  "fibonacci",
+  "title_case"
 ]
