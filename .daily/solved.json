@@ -8,5 +8,6 @@
   "binary_search",
   "password_validator",
   "count_vowels",
-  "roman_to_int"
+  "roman_to_int",
+  "power_of_two"
 ]
