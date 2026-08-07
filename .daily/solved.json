@@ -14,5 +14,6 @@
   "title_case",
   "reverse_string",
   "first_non_repeating",
-  "prime_check"
+  "prime_check",
+  "chunk_list"
 ]
