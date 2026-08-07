@@ -1,7 +1,7 @@
 """
 Problem: Rotate List
 Category: Lists
-Date: 2026-07-23
+Date: 2026-08-07
 
 Description:
     Rotate a list by k positions to the right.

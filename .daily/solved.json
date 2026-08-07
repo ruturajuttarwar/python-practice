@@ -15,5 +15,6 @@
   "reverse_string",
   "first_non_repeating",
   "prime_check",
-  "chunk_list"
+  "chunk_list",
+  "rotate_list"
 ]
