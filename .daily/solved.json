@@ -16,5 +16,6 @@
   "first_non_repeating",
   "prime_check",
   "chunk_list",
-  "rotate_list"
+  "rotate_list",
+  "matrix_transpose"
 ]
