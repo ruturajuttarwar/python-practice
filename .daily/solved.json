@@ -17,5 +17,6 @@
   "prime_check",
   "chunk_list",
   "rotate_list",
-  "matrix_transpose"
+  "matrix_transpose",
+  "two_sum"
 ]
