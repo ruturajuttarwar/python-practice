@@ -18,5 +18,6 @@
   "chunk_list",
   "rotate_list",
   "matrix_transpose",
-  "two_sum"
+  "two_sum",
+  "temperature_converter"
 ]
