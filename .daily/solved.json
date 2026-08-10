@@ -25,5 +25,6 @@
   "flatten_dict",
   "digit_sum",
   "merge_sorted",
-  "text_analyzer"
+  "text_analyzer",
+  "word_frequency"
 ]
