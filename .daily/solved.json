@@ -19,5 +19,6 @@
   "rotate_list",
   "matrix_transpose",
   "two_sum",
-  "temperature_converter"
+  "temperature_converter",
+  "gcd_lcm"
 ]
