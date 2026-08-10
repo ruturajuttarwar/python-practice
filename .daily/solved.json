@@ -23,5 +23,6 @@
   "gcd_lcm",
   "second_largest",
   "flatten_dict",
-  "digit_sum"
+  "digit_sum",
+  "merge_sorted"
 ]
