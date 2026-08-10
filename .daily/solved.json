@@ -21,5 +21,6 @@
   "two_sum",
   "temperature_converter",
   "gcd_lcm",
-  "second_largest"
+  "second_largest",
+  "flatten_dict"
 ]
