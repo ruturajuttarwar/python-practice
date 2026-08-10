@@ -1,7 +1,7 @@
 """
 Problem: Sum of Digits
 Category: Math
-Date: 2026-07-28
+Date: 2026-08-10
 
 Description:
     Compute the sum of digits of a number recursively.
