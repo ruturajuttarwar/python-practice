@@ -20,5 +20,6 @@
   "matrix_transpose",
   "two_sum",
   "temperature_converter",
-  "gcd_lcm"
+  "gcd_lcm",
+  "second_largest"
 ]
