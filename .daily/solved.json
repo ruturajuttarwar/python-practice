@@ -24,5 +24,6 @@
   "second_largest",
   "flatten_dict",
   "digit_sum",
-  "merge_sorted"
+  "merge_sorted",
+  "text_analyzer"
 ]
