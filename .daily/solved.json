@@ -26,5 +26,6 @@
   "digit_sum",
   "merge_sorted",
   "text_analyzer",
-  "word_frequency"
+  "word_frequency",
+  "invert_dict"
 ]
