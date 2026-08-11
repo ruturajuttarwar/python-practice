@@ -27,5 +27,6 @@
   "merge_sorted",
   "text_analyzer",
   "word_frequency",
-  "invert_dict"
+  "invert_dict",
+  "bubble_sort"
 ]
