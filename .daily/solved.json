@@ -28,5 +28,6 @@
   "text_analyzer",
   "word_frequency",
   "invert_dict",
-  "bubble_sort"
+  "bubble_sort",
+  "fizzbuzz"
 ]
