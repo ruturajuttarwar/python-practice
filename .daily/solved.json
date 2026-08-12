@@ -31,5 +31,6 @@
   "bubble_sort",
   "fizzbuzz",
   "compress_string",
-  "factorial"
+  "factorial",
+  "caesar_cipher"
 ]
