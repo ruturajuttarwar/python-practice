@@ -32,5 +32,6 @@
   "fizzbuzz",
   "compress_string",
   "factorial",
-  "caesar_cipher"
+  "caesar_cipher",
+  "merge_dicts"
 ]
