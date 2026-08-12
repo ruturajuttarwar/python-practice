@@ -29,5 +29,6 @@
   "word_frequency",
   "invert_dict",
   "bubble_sort",
-  "fizzbuzz"
+  "fizzbuzz",
+  "compress_string"
 ]
