@@ -1,4 +1,5 @@
 [
   "fizzbuzz",
-  "flatten_list"
+  "flatten_list",
+  "anagram_check"
 ]
