@@ -1,7 +1,7 @@
 """
 Problem: Factorial Calculator
 Category: Math
-Date: 2026-08-12
+Date: 2026-08-14
 
 Description:
     Write both iterative and recursive implementations of factorial.
