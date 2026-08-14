@@ -4,5 +4,6 @@
   "anagram_check",
   "first_non_repeating",
   "roman_to_int",
-  "factorial"
+  "factorial",
+  "reverse_string"
 ]
