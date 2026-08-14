@@ -1,5 +1,6 @@
 [
   "fizzbuzz",
   "flatten_list",
-  "anagram_check"
+  "anagram_check",
+  "first_non_repeating"
 ]
