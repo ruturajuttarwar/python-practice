@@ -8,5 +8,6 @@
   "reverse_string",
   "compress_string",
   "password_validator",
-  "selection_sort"
+  "selection_sort",
+  "temperature_converter"
 ]
