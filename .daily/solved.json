@@ -6,5 +6,6 @@
   "roman_to_int",
   "factorial",
   "reverse_string",
-  "compress_string"
+  "compress_string",
+  "password_validator"
 ]
