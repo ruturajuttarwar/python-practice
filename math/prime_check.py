@@ -1,7 +1,7 @@
 """
 Problem: Prime Number Check
 Category: Math
-Date: 2026-08-07
+Date: 2026-08-15
 
 Description:
     Check if a number is prime.
