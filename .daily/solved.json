@@ -7,5 +7,6 @@
   "factorial",
   "reverse_string",
   "compress_string",
-  "password_validator"
+  "password_validator",
+  "selection_sort"
 ]
