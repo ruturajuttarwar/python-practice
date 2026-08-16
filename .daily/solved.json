@@ -12,5 +12,6 @@
   "temperature_converter",
   "prime_check",
   "rotate_list",
-  "is_palindrome"
+  "is_palindrome",
+  "invert_dict"
 ]
