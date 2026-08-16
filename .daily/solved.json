@@ -13,5 +13,6 @@
   "prime_check",
   "rotate_list",
   "is_palindrome",
-  "invert_dict"
+  "invert_dict",
+  "merge_dicts"
 ]
