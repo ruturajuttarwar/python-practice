@@ -11,5 +11,6 @@
   "selection_sort",
   "temperature_converter",
   "prime_check",
-  "rotate_list"
+  "rotate_list",
+  "is_palindrome"
 ]
