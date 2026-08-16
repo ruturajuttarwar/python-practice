@@ -14,5 +14,6 @@
   "rotate_list",
   "is_palindrome",
   "invert_dict",
-  "merge_dicts"
+  "merge_dicts",
+  "chunk_list"
 ]
