@@ -18,5 +18,6 @@
   "chunk_list",
   "word_frequency",
   "digit_sum",
-  "valid_parentheses"
+  "valid_parentheses",
+  "power_of_two"
 ]
