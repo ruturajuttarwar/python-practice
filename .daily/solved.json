@@ -15,5 +15,6 @@
   "is_palindrome",
   "invert_dict",
   "merge_dicts",
-  "chunk_list"
+  "chunk_list",
+  "word_frequency"
 ]
