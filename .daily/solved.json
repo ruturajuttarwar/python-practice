@@ -17,5 +17,6 @@
   "merge_dicts",
   "chunk_list",
   "word_frequency",
-  "digit_sum"
+  "digit_sum",
+  "valid_parentheses"
 ]
