@@ -16,5 +16,6 @@
   "invert_dict",
   "merge_dicts",
   "chunk_list",
-  "word_frequency"
+  "word_frequency",
+  "digit_sum"
 ]
