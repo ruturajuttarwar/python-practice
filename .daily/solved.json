@@ -19,5 +19,6 @@
   "word_frequency",
   "digit_sum",
   "valid_parentheses",
-  "power_of_two"
+  "power_of_two",
+  "merge_sorted"
 ]
