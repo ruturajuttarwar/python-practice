@@ -23,5 +23,6 @@
   "merge_sorted",
   "remove_duplicates",
   "binary_search",
-  "flatten_dict"
+  "flatten_dict",
+  "insertion_sort"
 ]
