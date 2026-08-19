@@ -20,5 +20,6 @@
   "digit_sum",
   "valid_parentheses",
   "power_of_two",
-  "merge_sorted"
+  "merge_sorted",
+  "remove_duplicates"
 ]
