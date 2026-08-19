@@ -22,5 +22,6 @@
   "power_of_two",
   "merge_sorted",
   "remove_duplicates",
-  "binary_search"
+  "binary_search",
+  "flatten_dict"
 ]
