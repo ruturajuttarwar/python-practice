@@ -26,5 +26,6 @@
   "flatten_dict",
   "insertion_sort",
   "fibonacci",
-  "title_case"
+  "title_case",
+  "matrix_transpose"
 ]
