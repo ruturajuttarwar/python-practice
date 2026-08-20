@@ -27,5 +27,6 @@
   "insertion_sort",
   "fibonacci",
   "title_case",
-  "matrix_transpose"
+  "matrix_transpose",
+  "bubble_sort"
 ]
