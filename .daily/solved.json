@@ -25,5 +25,6 @@
   "binary_search",
   "flatten_dict",
   "insertion_sort",
-  "fibonacci"
+  "fibonacci",
+  "title_case"
 ]
