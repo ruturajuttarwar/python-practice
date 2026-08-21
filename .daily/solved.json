@@ -29,5 +29,6 @@
   "title_case",
   "matrix_transpose",
   "bubble_sort",
-  "count_vowels"
+  "count_vowels",
+  "two_sum"
 ]
