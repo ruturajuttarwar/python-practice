@@ -28,5 +28,6 @@
   "fibonacci",
   "title_case",
   "matrix_transpose",
-  "bubble_sort"
+  "bubble_sort",
+  "count_vowels"
 ]
