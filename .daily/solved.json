@@ -1,3 +1,4 @@
 [
-  "group_by"
+  "group_by",
+  "flatten_list"
 ]
