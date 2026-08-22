@@ -1,5 +1,6 @@
 [
   "group_by",
   "flatten_list",
-  "digit_sum"
+  "digit_sum",
+  "power_of_two"
 ]
