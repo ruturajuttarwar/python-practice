@@ -1,7 +1,7 @@
 """
 Problem: Check Palindrome
 Category: Strings
-Date: 2026-08-16
+Date: 2026-08-22
 
 Description:
     Check if a given string is a palindrome (case-insensitive).

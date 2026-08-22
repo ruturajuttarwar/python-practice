@@ -2,5 +2,6 @@
   "group_by",
   "flatten_list",
   "digit_sum",
-  "power_of_two"
+  "power_of_two",
+  "is_palindrome"
 ]
