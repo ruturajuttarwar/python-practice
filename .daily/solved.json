@@ -7,5 +7,6 @@
   "fibonacci",
   "bubble_sort",
   "prime_check",
-  "armstrong_number"
+  "armstrong_number",
+  "merge_sorted"
 ]
