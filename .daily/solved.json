@@ -9,5 +9,6 @@
   "prime_check",
   "armstrong_number",
   "merge_sorted",
-  "roman_to_int"
+  "roman_to_int",
+  "valid_parentheses"
 ]
