@@ -1,7 +1,7 @@
 """
 Problem: Armstrong Number
 Category: Math
-Date: 2026-07-31
+Date: 2026-08-23
 
 Description:
     Check if a number is an Armstrong number.

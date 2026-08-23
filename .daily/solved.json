@@ -6,5 +6,6 @@
   "is_palindrome",
   "fibonacci",
   "bubble_sort",
-  "prime_check"
+  "prime_check",
+  "armstrong_number"
 ]
