@@ -10,5 +10,6 @@
   "armstrong_number",
   "merge_sorted",
   "roman_to_int",
-  "valid_parentheses"
+  "valid_parentheses",
+  "chunk_list"
 ]
