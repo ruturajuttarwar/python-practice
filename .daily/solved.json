@@ -12,5 +12,6 @@
   "roman_to_int",
   "valid_parentheses",
   "chunk_list",
-  "flatten_dict"
+  "flatten_dict",
+  "second_largest"
 ]
