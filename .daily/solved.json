@@ -11,5 +11,6 @@
   "merge_sorted",
   "roman_to_int",
   "valid_parentheses",
-  "chunk_list"
+  "chunk_list",
+  "flatten_dict"
 ]
