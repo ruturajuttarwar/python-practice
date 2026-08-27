@@ -15,5 +15,6 @@
   "flatten_dict",
   "second_largest",
   "insertion_sort",
-  "anagram_check"
+  "anagram_check",
+  "reverse_string"
 ]
