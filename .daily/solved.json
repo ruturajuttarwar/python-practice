@@ -13,5 +13,6 @@
   "valid_parentheses",
   "chunk_list",
   "flatten_dict",
-  "second_largest"
+  "second_largest",
+  "insertion_sort"
 ]
