@@ -16,5 +16,6 @@
   "second_largest",
   "insertion_sort",
   "anagram_check",
-  "reverse_string"
+  "reverse_string",
+  "factorial"
 ]
