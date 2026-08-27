@@ -14,5 +14,6 @@
   "chunk_list",
   "flatten_dict",
   "second_largest",
-  "insertion_sort"
+  "insertion_sort",
+  "anagram_check"
 ]
