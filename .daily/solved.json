@@ -20,5 +20,6 @@
   "factorial",
   "compress_string",
   "fizzbuzz",
-  "binary_search"
+  "binary_search",
+  "word_frequency"
 ]
