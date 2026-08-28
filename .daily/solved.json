@@ -19,5 +19,6 @@
   "reverse_string",
   "factorial",
   "compress_string",
-  "fizzbuzz"
+  "fizzbuzz",
+  "binary_search"
 ]

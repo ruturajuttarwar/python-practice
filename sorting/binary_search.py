@@ -1,7 +1,7 @@
 """
 Problem: Binary Search
 Category: Sorting
-Date: 2026-08-19
+Date: 2026-08-28
 
 Description:
     Implement binary search on a sorted list.
