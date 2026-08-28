@@ -18,5 +18,6 @@
   "anagram_check",
   "reverse_string",
   "factorial",
-  "compress_string"
+  "compress_string",
+  "fizzbuzz"
 ]
