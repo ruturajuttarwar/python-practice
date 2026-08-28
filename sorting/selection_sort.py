@@ -1,7 +1,7 @@
 """
 Problem: Selection Sort
 Category: Sorting
-Date: 2026-08-15
+Date: 2026-08-28
 
 Description:
     Implement the selection sort algorithm.
