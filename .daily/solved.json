@@ -21,5 +21,6 @@
   "compress_string",
   "fizzbuzz",
   "binary_search",
-  "word_frequency"
+  "word_frequency",
+  "password_validator"
 ]
