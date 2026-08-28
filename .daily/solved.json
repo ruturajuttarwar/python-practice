@@ -17,5 +17,6 @@
   "insertion_sort",
   "anagram_check",
   "reverse_string",
-  "factorial"
+  "factorial",
+  "compress_string"
 ]
