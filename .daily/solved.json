@@ -26,5 +26,6 @@
   "selection_sort",
   "caesar_cipher",
   "invert_dict",
-  "title_case"
+  "title_case",
+  "rotate_list"
 ]
