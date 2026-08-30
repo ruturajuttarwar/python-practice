@@ -27,5 +27,6 @@
   "caesar_cipher",
   "invert_dict",
   "title_case",
-  "rotate_list"
+  "rotate_list",
+  "count_vowels"
 ]
