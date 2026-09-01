@@ -30,5 +30,6 @@
   "rotate_list",
   "count_vowels",
   "merge_dicts",
-  "matrix_transpose"
+  "matrix_transpose",
+  "first_non_repeating"
 ]
