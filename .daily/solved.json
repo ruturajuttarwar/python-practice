@@ -28,5 +28,6 @@
   "invert_dict",
   "title_case",
   "rotate_list",
-  "count_vowels"
+  "count_vowels",
+  "merge_dicts"
 ]
