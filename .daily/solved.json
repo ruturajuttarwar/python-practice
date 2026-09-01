@@ -29,5 +29,6 @@
   "title_case",
   "rotate_list",
   "count_vowels",
-  "merge_dicts"
+  "merge_dicts",
+  "matrix_transpose"
 ]
