@@ -32,5 +32,6 @@
   "merge_dicts",
   "matrix_transpose",
   "first_non_repeating",
-  "remove_duplicates"
+  "remove_duplicates",
+  "two_sum"
 ]
