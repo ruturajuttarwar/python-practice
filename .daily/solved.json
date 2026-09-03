@@ -2,5 +2,6 @@
   "prime_check",
   "fizzbuzz",
   "binary_search",
-  "two_sum"
+  "two_sum",
+  "remove_duplicates"
 ]
