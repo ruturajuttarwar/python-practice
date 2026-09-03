@@ -4,5 +4,6 @@
   "binary_search",
   "two_sum",
   "remove_duplicates",
-  "flatten_dict"
+  "flatten_dict",
+  "is_palindrome"
 ]
