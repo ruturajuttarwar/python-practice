@@ -7,5 +7,6 @@
   "flatten_dict",
   "is_palindrome",
   "anagram_check",
-  "digit_sum"
+  "digit_sum",
+  "reverse_string"
 ]
