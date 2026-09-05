@@ -8,5 +8,6 @@
   "is_palindrome",
   "anagram_check",
   "digit_sum",
-  "reverse_string"
+  "reverse_string",
+  "bubble_sort"
 ]
