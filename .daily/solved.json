@@ -11,5 +11,6 @@
   "reverse_string",
   "bubble_sort",
   "count_vowels",
-  "invert_dict"
+  "invert_dict",
+  "merge_sorted"
 ]
