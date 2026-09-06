@@ -10,5 +10,6 @@
   "digit_sum",
   "reverse_string",
   "bubble_sort",
-  "count_vowels"
+  "count_vowels",
+  "invert_dict"
 ]
