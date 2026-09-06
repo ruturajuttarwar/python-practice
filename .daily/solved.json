@@ -9,5 +9,6 @@
   "anagram_check",
   "digit_sum",
   "reverse_string",
-  "bubble_sort"
+  "bubble_sort",
+  "count_vowels"
 ]
