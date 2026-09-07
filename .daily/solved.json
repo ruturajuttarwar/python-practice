@@ -15,5 +15,6 @@
   "merge_sorted",
   "valid_parentheses",
   "rotate_list",
-  "text_analyzer"
+  "text_analyzer",
+  "second_largest"
 ]
