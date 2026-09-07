@@ -13,5 +13,6 @@
   "count_vowels",
   "invert_dict",
   "merge_sorted",
-  "valid_parentheses"
+  "valid_parentheses",
+  "rotate_list"
 ]
