@@ -16,5 +16,6 @@
   "valid_parentheses",
   "rotate_list",
   "text_analyzer",
-  "second_largest"
+  "second_largest",
+  "group_by"
 ]
