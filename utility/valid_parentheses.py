@@ -1,7 +1,7 @@
 """
 Problem: Valid Parentheses
 Category: Utility
-Date: 2026-08-23
+Date: 2026-09-07
 
 Description:
     Check if a string of parentheses is valid.

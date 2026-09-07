@@ -12,5 +12,6 @@
   "bubble_sort",
   "count_vowels",
   "invert_dict",
-  "merge_sorted"
+  "merge_sorted",
+  "valid_parentheses"
 ]
