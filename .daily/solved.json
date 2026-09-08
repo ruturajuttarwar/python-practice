@@ -17,5 +17,6 @@
   "rotate_list",
   "text_analyzer",
   "second_largest",
-  "group_by"
+  "group_by",
+  "word_frequency"
 ]
