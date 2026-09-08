@@ -19,5 +19,6 @@
   "second_largest",
   "group_by",
   "word_frequency",
-  "password_validator"
+  "password_validator",
+  "power_of_two"
 ]
