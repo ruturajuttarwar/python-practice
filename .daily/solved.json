@@ -18,5 +18,6 @@
   "text_analyzer",
   "second_largest",
   "group_by",
-  "word_frequency"
+  "word_frequency",
+  "password_validator"
 ]
