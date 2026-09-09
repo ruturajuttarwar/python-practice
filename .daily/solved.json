@@ -21,5 +21,6 @@
   "word_frequency",
   "password_validator",
   "power_of_two",
-  "temperature_converter"
+  "temperature_converter",
+  "armstrong_number"
 ]
