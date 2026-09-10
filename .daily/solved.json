@@ -25,5 +25,6 @@
   "armstrong_number",
   "selection_sort",
   "merge_dicts",
-  "compress_string"
+  "compress_string",
+  "insertion_sort"
 ]
