@@ -24,5 +24,6 @@
   "temperature_converter",
   "armstrong_number",
   "selection_sort",
-  "merge_dicts"
+  "merge_dicts",
+  "compress_string"
 ]
