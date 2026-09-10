@@ -23,5 +23,6 @@
   "power_of_two",
   "temperature_converter",
   "armstrong_number",
-  "selection_sort"
+  "selection_sort",
+  "merge_dicts"
 ]
