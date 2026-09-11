@@ -31,5 +31,6 @@
   "roman_to_int",
   "chunk_list",
   "fibonacci",
-  "title_case"
+  "title_case",
+  "matrix_transpose"
 ]
