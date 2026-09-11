@@ -28,5 +28,6 @@
   "compress_string",
   "insertion_sort",
   "flatten_list",
-  "roman_to_int"
+  "roman_to_int",
+  "chunk_list"
 ]
