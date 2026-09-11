@@ -27,5 +27,6 @@
   "merge_dicts",
   "compress_string",
   "insertion_sort",
-  "flatten_list"
+  "flatten_list",
+  "roman_to_int"
 ]
