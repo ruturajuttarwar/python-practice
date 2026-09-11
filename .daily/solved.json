@@ -29,5 +29,6 @@
   "insertion_sort",
   "flatten_list",
   "roman_to_int",
-  "chunk_list"
+  "chunk_list",
+  "fibonacci"
 ]
