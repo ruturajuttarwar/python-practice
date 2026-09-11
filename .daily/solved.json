@@ -30,5 +30,6 @@
   "flatten_list",
   "roman_to_int",
   "chunk_list",
-  "fibonacci"
+  "fibonacci",
+  "title_case"
 ]
