@@ -32,5 +32,6 @@
   "chunk_list",
   "fibonacci",
   "title_case",
-  "matrix_transpose"
+  "matrix_transpose",
+  "caesar_cipher"
 ]
