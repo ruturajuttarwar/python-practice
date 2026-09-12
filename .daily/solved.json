@@ -33,5 +33,6 @@
   "fibonacci",
   "title_case",
   "matrix_transpose",
-  "caesar_cipher"
+  "caesar_cipher",
+  "factorial"
 ]
