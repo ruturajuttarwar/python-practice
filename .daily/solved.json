@@ -34,5 +34,6 @@
   "title_case",
   "matrix_transpose",
   "caesar_cipher",
-  "factorial"
+  "factorial",
+  "first_non_repeating"
 ]
