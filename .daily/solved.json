@@ -1,5 +1,6 @@
 [
   "fibonacci",
   "text_analyzer",
-  "remove_duplicates"
+  "remove_duplicates",
+  "gcd_lcm"
 ]
