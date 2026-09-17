@@ -3,5 +3,6 @@
   "text_analyzer",
   "remove_duplicates",
   "gcd_lcm",
-  "bubble_sort"
+  "bubble_sort",
+  "valid_parentheses"
 ]
