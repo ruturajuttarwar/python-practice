@@ -2,5 +2,6 @@
   "fibonacci",
   "text_analyzer",
   "remove_duplicates",
-  "gcd_lcm"
+  "gcd_lcm",
+  "bubble_sort"
 ]
