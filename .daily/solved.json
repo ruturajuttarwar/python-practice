@@ -4,5 +4,6 @@
   "remove_duplicates",
   "gcd_lcm",
   "bubble_sort",
-  "valid_parentheses"
+  "valid_parentheses",
+  "insertion_sort"
 ]
