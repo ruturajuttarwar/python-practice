@@ -1,4 +1,5 @@
 [
   "fibonacci",
-  "text_analyzer"
+  "text_analyzer",
+  "remove_duplicates"
 ]
