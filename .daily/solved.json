@@ -6,5 +6,6 @@
   "bubble_sort",
   "valid_parentheses",
   "insertion_sort",
-  "two_sum"
+  "two_sum",
+  "roman_to_int"
 ]
