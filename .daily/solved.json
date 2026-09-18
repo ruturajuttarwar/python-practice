@@ -8,5 +8,6 @@
   "insertion_sort",
   "two_sum",
   "roman_to_int",
-  "anagram_check"
+  "anagram_check",
+  "count_vowels"
 ]
