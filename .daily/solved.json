@@ -7,5 +7,6 @@
   "valid_parentheses",
   "insertion_sort",
   "two_sum",
-  "roman_to_int"
+  "roman_to_int",
+  "anagram_check"
 ]
