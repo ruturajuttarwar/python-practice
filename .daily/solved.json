@@ -11,5 +11,6 @@
   "anagram_check",
   "count_vowels",
   "merge_dicts",
-  "rotate_list"
+  "rotate_list",
+  "fizzbuzz"
 ]
