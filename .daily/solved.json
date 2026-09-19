@@ -10,5 +10,6 @@
   "roman_to_int",
   "anagram_check",
   "count_vowels",
-  "merge_dicts"
+  "merge_dicts",
+  "rotate_list"
 ]
