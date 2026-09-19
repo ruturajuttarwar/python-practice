@@ -13,5 +13,6 @@
   "merge_dicts",
   "rotate_list",
   "fizzbuzz",
-  "word_frequency"
+  "word_frequency",
+  "selection_sort"
 ]
