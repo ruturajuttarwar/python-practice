@@ -9,5 +9,6 @@
   "two_sum",
   "roman_to_int",
   "anagram_check",
-  "count_vowels"
+  "count_vowels",
+  "merge_dicts"
 ]
