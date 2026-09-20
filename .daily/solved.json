@@ -15,5 +15,6 @@
   "fizzbuzz",
   "word_frequency",
   "selection_sort",
-  "power_of_two"
+  "power_of_two",
+  "password_validator"
 ]
