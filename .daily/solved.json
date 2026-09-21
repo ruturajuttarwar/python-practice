@@ -16,5 +16,6 @@
   "word_frequency",
   "selection_sort",
   "power_of_two",
-  "password_validator"
+  "password_validator",
+  "title_case"
 ]
