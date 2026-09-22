@@ -19,5 +19,6 @@
   "password_validator",
   "title_case",
   "reverse_string",
-  "caesar_cipher"
+  "caesar_cipher",
+  "binary_search"
 ]
