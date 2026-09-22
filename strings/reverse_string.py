@@ -1,7 +1,7 @@
 """
 Problem: Reverse a String
 Category: Strings
-Date: 2026-09-04
+Date: 2026-09-22
 
 Description:
     Write a function that reverses a given string without using slicing.
