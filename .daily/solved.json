@@ -22,5 +22,6 @@
   "caesar_cipher",
   "binary_search",
   "first_non_repeating",
-  "prime_check"
+  "prime_check",
+  "flatten_list"
 ]
