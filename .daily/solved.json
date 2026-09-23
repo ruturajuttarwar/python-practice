@@ -23,5 +23,6 @@
   "binary_search",
   "first_non_repeating",
   "prime_check",
-  "flatten_list"
+  "flatten_list",
+  "merge_sorted"
 ]
