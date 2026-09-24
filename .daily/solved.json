@@ -26,5 +26,6 @@
   "flatten_list",
   "merge_sorted",
   "second_largest",
-  "chunk_list"
+  "chunk_list",
+  "group_by"
 ]
