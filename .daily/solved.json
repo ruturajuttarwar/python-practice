@@ -28,5 +28,6 @@
   "second_largest",
   "chunk_list",
   "group_by",
-  "armstrong_number"
+  "armstrong_number",
+  "flatten_dict"
 ]
