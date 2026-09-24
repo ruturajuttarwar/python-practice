@@ -27,5 +27,6 @@
   "merge_sorted",
   "second_largest",
   "chunk_list",
-  "group_by"
+  "group_by",
+  "armstrong_number"
 ]
