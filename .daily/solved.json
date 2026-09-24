@@ -30,5 +30,6 @@
   "group_by",
   "armstrong_number",
   "flatten_dict",
-  "compress_string"
+  "compress_string",
+  "is_palindrome"
 ]
