@@ -29,5 +29,6 @@
   "chunk_list",
   "group_by",
   "armstrong_number",
-  "flatten_dict"
+  "flatten_dict",
+  "compress_string"
 ]
