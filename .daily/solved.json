@@ -31,5 +31,6 @@
   "armstrong_number",
   "flatten_dict",
   "compress_string",
-  "is_palindrome"
+  "is_palindrome",
+  "invert_dict"
 ]
