@@ -32,5 +32,6 @@
   "flatten_dict",
   "compress_string",
   "is_palindrome",
-  "invert_dict"
+  "invert_dict",
+  "factorial"
 ]
