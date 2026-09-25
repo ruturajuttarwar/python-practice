@@ -33,5 +33,6 @@
   "compress_string",
   "is_palindrome",
   "invert_dict",
-  "factorial"
+  "factorial",
+  "temperature_converter"
 ]
