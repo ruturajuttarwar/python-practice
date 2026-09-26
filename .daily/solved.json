@@ -2,5 +2,6 @@
   "compress_string",
   "group_by",
   "bubble_sort",
-  "password_validator"
+  "password_validator",
+  "roman_to_int"
 ]
