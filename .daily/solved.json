@@ -3,5 +3,6 @@
   "group_by",
   "bubble_sort",
   "password_validator",
-  "roman_to_int"
+  "roman_to_int",
+  "text_analyzer"
 ]
