@@ -1,5 +1,6 @@
 [
   "compress_string",
   "group_by",
-  "bubble_sort"
+  "bubble_sort",
+  "password_validator"
 ]
