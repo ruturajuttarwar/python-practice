@@ -1,4 +1,5 @@
 [
   "compress_string",
-  "group_by"
+  "group_by",
+  "bubble_sort"
 ]
