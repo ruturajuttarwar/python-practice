@@ -4,5 +4,6 @@
   "bubble_sort",
   "password_validator",
   "roman_to_int",
-  "text_analyzer"
+  "text_analyzer",
+  "armstrong_number"
 ]
