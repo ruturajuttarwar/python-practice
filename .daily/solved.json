@@ -5,5 +5,6 @@
   "password_validator",
   "roman_to_int",
   "text_analyzer",
-  "armstrong_number"
+  "armstrong_number",
+  "invert_dict"
 ]
