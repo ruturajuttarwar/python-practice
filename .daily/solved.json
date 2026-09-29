@@ -8,5 +8,6 @@
   "armstrong_number",
   "invert_dict",
   "temperature_converter",
-  "fibonacci"
+  "fibonacci",
+  "anagram_check"
 ]
