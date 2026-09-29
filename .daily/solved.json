@@ -9,5 +9,6 @@
   "invert_dict",
   "temperature_converter",
   "fibonacci",
-  "anagram_check"
+  "anagram_check",
+  "count_vowels"
 ]
