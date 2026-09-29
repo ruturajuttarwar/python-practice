@@ -7,5 +7,6 @@
   "text_analyzer",
   "armstrong_number",
   "invert_dict",
-  "temperature_converter"
+  "temperature_converter",
+  "fibonacci"
 ]
