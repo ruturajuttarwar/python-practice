@@ -12,5 +12,6 @@
   "anagram_check",
   "count_vowels",
   "power_of_two",
-  "merge_sorted"
+  "merge_sorted",
+  "remove_duplicates"
 ]
