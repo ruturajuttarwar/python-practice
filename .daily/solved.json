@@ -13,5 +13,6 @@
   "count_vowels",
   "power_of_two",
   "merge_sorted",
-  "remove_duplicates"
+  "remove_duplicates",
+  "reverse_string"
 ]
