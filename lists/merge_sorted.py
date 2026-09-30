@@ -1,7 +1,7 @@
 """
 Problem: Merge Sorted Lists
 Category: Lists
-Date: 2026-09-23
+Date: 2026-09-30
 
 Description:
     Merge two sorted lists into one sorted list.

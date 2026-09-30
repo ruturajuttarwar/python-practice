@@ -11,5 +11,6 @@
   "fibonacci",
   "anagram_check",
   "count_vowels",
-  "power_of_two"
+  "power_of_two",
+  "merge_sorted"
 ]
