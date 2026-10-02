@@ -14,5 +14,6 @@
   "power_of_two",
   "merge_sorted",
   "remove_duplicates",
-  "reverse_string"
+  "reverse_string",
+  "caesar_cipher"
 ]
