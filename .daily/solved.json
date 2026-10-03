@@ -16,5 +16,6 @@
   "remove_duplicates",
   "reverse_string",
   "caesar_cipher",
-  "merge_dicts"
+  "merge_dicts",
+  "factorial"
 ]
