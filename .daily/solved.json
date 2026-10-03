@@ -20,5 +20,6 @@
   "factorial",
   "rotate_list",
   "insertion_sort",
-  "flatten_dict"
+  "flatten_dict",
+  "matrix_transpose"
 ]
