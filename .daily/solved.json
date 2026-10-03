@@ -19,5 +19,6 @@
   "merge_dicts",
   "factorial",
   "rotate_list",
-  "insertion_sort"
+  "insertion_sort",
+  "flatten_dict"
 ]
