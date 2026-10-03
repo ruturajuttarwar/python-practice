@@ -17,5 +17,6 @@
   "reverse_string",
   "caesar_cipher",
   "merge_dicts",
-  "factorial"
+  "factorial",
+  "rotate_list"
 ]
