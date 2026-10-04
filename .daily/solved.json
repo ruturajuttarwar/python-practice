@@ -22,5 +22,6 @@
   "insertion_sort",
   "flatten_dict",
   "matrix_transpose",
-  "flatten_list"
+  "flatten_list",
+  "valid_parentheses"
 ]
