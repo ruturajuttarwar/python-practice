@@ -23,5 +23,6 @@
   "flatten_dict",
   "matrix_transpose",
   "flatten_list",
-  "valid_parentheses"
+  "valid_parentheses",
+  "is_palindrome"
 ]
