@@ -21,5 +21,6 @@
   "rotate_list",
   "insertion_sort",
   "flatten_dict",
-  "matrix_transpose"
+  "matrix_transpose",
+  "flatten_list"
 ]
