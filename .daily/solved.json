@@ -24,5 +24,6 @@
   "matrix_transpose",
   "flatten_list",
   "valid_parentheses",
-  "is_palindrome"
+  "is_palindrome",
+  "second_largest"
 ]
