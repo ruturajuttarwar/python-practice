@@ -25,5 +25,6 @@
   "flatten_list",
   "valid_parentheses",
   "is_palindrome",
-  "second_largest"
+  "second_largest",
+  "word_frequency"
 ]
