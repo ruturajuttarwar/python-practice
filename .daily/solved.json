@@ -27,5 +27,6 @@
   "is_palindrome",
   "second_largest",
   "word_frequency",
-  "digit_sum"
+  "digit_sum",
+  "title_case"
 ]
