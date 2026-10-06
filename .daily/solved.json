@@ -33,5 +33,6 @@
   "gcd_lcm",
   "binary_search",
   "first_non_repeating",
-  "two_sum"
+  "two_sum",
+  "fizzbuzz"
 ]

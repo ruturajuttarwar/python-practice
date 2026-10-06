@@ -1,7 +1,7 @@
 """
 Problem: FizzBuzz
 Category: Math
-Date: 2026-09-19
+Date: 2026-10-06
 
 Description:
     Write a function that returns FizzBuzz output for numbers 1 to n.
