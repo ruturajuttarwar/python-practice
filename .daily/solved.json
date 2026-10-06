@@ -31,5 +31,6 @@
   "title_case",
   "selection_sort",
   "gcd_lcm",
-  "binary_search"
+  "binary_search",
+  "first_non_repeating"
 ]
