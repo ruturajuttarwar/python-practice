@@ -30,5 +30,6 @@
   "digit_sum",
   "title_case",
   "selection_sort",
-  "gcd_lcm"
+  "gcd_lcm",
+  "binary_search"
 ]
