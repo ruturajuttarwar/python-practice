@@ -32,5 +32,6 @@
   "selection_sort",
   "gcd_lcm",
   "binary_search",
-  "first_non_repeating"
+  "first_non_repeating",
+  "two_sum"
 ]
