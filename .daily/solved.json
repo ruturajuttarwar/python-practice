@@ -29,5 +29,6 @@
   "word_frequency",
   "digit_sum",
   "title_case",
-  "selection_sort"
+  "selection_sort",
+  "gcd_lcm"
 ]
