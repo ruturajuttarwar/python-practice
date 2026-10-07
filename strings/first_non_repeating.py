@@ -1,7 +1,7 @@
 """
 Problem: First Non-Repeating Character
 Category: Strings
-Date: 2026-10-06
+Date: 2026-10-07
 
 Description:
     Find the first non-repeating character in a string.
