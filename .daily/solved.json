@@ -3,5 +3,6 @@
   "caesar_cipher",
   "fizzbuzz",
   "digit_sum",
-  "chunk_list"
+  "chunk_list",
+  "power_of_two"
 ]
