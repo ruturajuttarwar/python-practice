@@ -2,5 +2,6 @@
   "first_non_repeating",
   "caesar_cipher",
   "fizzbuzz",
-  "digit_sum"
+  "digit_sum",
+  "chunk_list"
 ]
