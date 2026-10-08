@@ -1,5 +1,6 @@
 [
   "first_non_repeating",
   "caesar_cipher",
-  "fizzbuzz"
+  "fizzbuzz",
+  "digit_sum"
 ]
