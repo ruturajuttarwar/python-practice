@@ -7,5 +7,6 @@
   "power_of_two",
   "insertion_sort",
   "selection_sort",
-  "bubble_sort"
+  "bubble_sort",
+  "valid_parentheses"
 ]
