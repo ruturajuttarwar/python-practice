@@ -8,5 +8,6 @@
   "insertion_sort",
   "selection_sort",
   "bubble_sort",
-  "valid_parentheses"
+  "valid_parentheses",
+  "rotate_list"
 ]
