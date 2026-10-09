@@ -9,5 +9,6 @@
   "selection_sort",
   "bubble_sort",
   "valid_parentheses",
-  "rotate_list"
+  "rotate_list",
+  "gcd_lcm"
 ]
