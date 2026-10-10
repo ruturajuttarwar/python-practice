@@ -10,5 +10,6 @@
   "bubble_sort",
   "valid_parentheses",
   "rotate_list",
-  "gcd_lcm"
+  "gcd_lcm",
+  "compress_string"
 ]
