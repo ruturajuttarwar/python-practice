@@ -14,5 +14,6 @@
   "compress_string",
   "flatten_dict",
   "prime_check",
-  "binary_search"
+  "binary_search",
+  "is_palindrome"
 ]
