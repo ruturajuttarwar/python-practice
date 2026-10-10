@@ -12,5 +12,6 @@
   "rotate_list",
   "gcd_lcm",
   "compress_string",
-  "flatten_dict"
+  "flatten_dict",
+  "prime_check"
 ]
