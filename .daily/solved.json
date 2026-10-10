@@ -11,5 +11,6 @@
   "valid_parentheses",
   "rotate_list",
   "gcd_lcm",
-  "compress_string"
+  "compress_string",
+  "flatten_dict"
 ]
