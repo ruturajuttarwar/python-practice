@@ -13,5 +13,6 @@
   "gcd_lcm",
   "compress_string",
   "flatten_dict",
-  "prime_check"
+  "prime_check",
+  "binary_search"
 ]
