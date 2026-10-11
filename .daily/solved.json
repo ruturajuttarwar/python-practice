@@ -17,5 +17,6 @@
   "binary_search",
   "is_palindrome",
   "count_vowels",
-  "reverse_string"
+  "reverse_string",
+  "invert_dict"
 ]
