@@ -18,5 +18,6 @@
   "is_palindrome",
   "count_vowels",
   "reverse_string",
-  "invert_dict"
+  "invert_dict",
+  "remove_duplicates"
 ]
