@@ -16,5 +16,6 @@
   "prime_check",
   "binary_search",
   "is_palindrome",
-  "count_vowels"
+  "count_vowels",
+  "reverse_string"
 ]
