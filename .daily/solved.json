@@ -19,5 +19,6 @@
   "count_vowels",
   "reverse_string",
   "invert_dict",
-  "remove_duplicates"
+  "remove_duplicates",
+  "password_validator"
 ]
