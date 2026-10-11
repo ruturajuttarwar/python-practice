@@ -15,5 +15,6 @@
   "flatten_dict",
   "prime_check",
   "binary_search",
-  "is_palindrome"
+  "is_palindrome",
+  "count_vowels"
 ]
