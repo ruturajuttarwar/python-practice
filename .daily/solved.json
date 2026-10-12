@@ -20,5 +20,6 @@
   "reverse_string",
   "invert_dict",
   "remove_duplicates",
-  "password_validator"
+  "password_validator",
+  "word_frequency"
 ]
