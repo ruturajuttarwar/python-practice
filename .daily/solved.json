@@ -21,5 +21,6 @@
   "invert_dict",
   "remove_duplicates",
   "password_validator",
-  "word_frequency"
+  "word_frequency",
+  "matrix_transpose"
 ]
