@@ -22,5 +22,6 @@
   "remove_duplicates",
   "password_validator",
   "word_frequency",
-  "matrix_transpose"
+  "matrix_transpose",
+  "factorial"
 ]
