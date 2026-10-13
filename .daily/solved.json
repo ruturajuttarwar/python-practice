@@ -25,5 +25,6 @@
   "matrix_transpose",
   "factorial",
   "flatten_list",
-  "merge_dicts"
+  "merge_dicts",
+  "anagram_check"
 ]
