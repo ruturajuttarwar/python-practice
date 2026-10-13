@@ -26,5 +26,6 @@
   "factorial",
   "flatten_list",
   "merge_dicts",
-  "anagram_check"
+  "anagram_check",
+  "temperature_converter"
 ]
