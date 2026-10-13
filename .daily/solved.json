@@ -23,5 +23,6 @@
   "password_validator",
   "word_frequency",
   "matrix_transpose",
-  "factorial"
+  "factorial",
+  "flatten_list"
 ]
