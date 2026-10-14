@@ -28,5 +28,6 @@
   "merge_dicts",
   "anagram_check",
   "temperature_converter",
-  "group_by"
+  "group_by",
+  "fibonacci"
 ]
