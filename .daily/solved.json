@@ -31,5 +31,6 @@
   "group_by",
   "fibonacci",
   "title_case",
-  "armstrong_number"
+  "armstrong_number",
+  "roman_to_int"
 ]
