@@ -27,5 +27,6 @@
   "flatten_list",
   "merge_dicts",
   "anagram_check",
-  "temperature_converter"
+  "temperature_converter",
+  "group_by"
 ]
