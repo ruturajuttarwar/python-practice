@@ -29,5 +29,6 @@
   "anagram_check",
   "temperature_converter",
   "group_by",
-  "fibonacci"
+  "fibonacci",
+  "title_case"
 ]
