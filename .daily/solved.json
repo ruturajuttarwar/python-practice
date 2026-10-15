@@ -1,5 +1,6 @@
 [
   "caesar_cipher",
   "text_analyzer",
-  "rotate_list"
+  "rotate_list",
+  "anagram_check"
 ]
