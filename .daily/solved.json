@@ -2,5 +2,6 @@
   "caesar_cipher",
   "text_analyzer",
   "rotate_list",
-  "anagram_check"
+  "anagram_check",
+  "reverse_string"
 ]
