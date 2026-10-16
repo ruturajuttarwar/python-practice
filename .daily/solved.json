@@ -6,5 +6,6 @@
   "reverse_string",
   "factorial",
   "gcd_lcm",
-  "invert_dict"
+  "invert_dict",
+  "second_largest"
 ]
