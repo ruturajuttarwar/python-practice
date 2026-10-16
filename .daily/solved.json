@@ -4,5 +4,6 @@
   "rotate_list",
   "anagram_check",
   "reverse_string",
-  "factorial"
+  "factorial",
+  "gcd_lcm"
 ]
