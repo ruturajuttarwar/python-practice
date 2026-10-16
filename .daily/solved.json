@@ -3,5 +3,6 @@
   "text_analyzer",
   "rotate_list",
   "anagram_check",
-  "reverse_string"
+  "reverse_string",
+  "factorial"
 ]
