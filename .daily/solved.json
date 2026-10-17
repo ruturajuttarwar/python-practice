@@ -8,5 +8,6 @@
   "gcd_lcm",
   "invert_dict",
   "second_largest",
-  "count_vowels"
+  "count_vowels",
+  "is_palindrome"
 ]
