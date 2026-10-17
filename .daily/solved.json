@@ -7,5 +7,6 @@
   "factorial",
   "gcd_lcm",
   "invert_dict",
-  "second_largest"
+  "second_largest",
+  "count_vowels"
 ]
