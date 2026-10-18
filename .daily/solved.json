@@ -9,5 +9,6 @@
   "invert_dict",
   "second_largest",
   "count_vowels",
-  "is_palindrome"
+  "is_palindrome",
+  "prime_check"
 ]
