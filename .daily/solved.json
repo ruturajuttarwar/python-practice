@@ -10,5 +10,6 @@
   "second_largest",
   "count_vowels",
   "is_palindrome",
-  "prime_check"
+  "prime_check",
+  "armstrong_number"
 ]
