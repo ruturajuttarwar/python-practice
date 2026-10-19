@@ -11,5 +11,6 @@
   "count_vowels",
   "is_palindrome",
   "prime_check",
-  "armstrong_number"
+  "armstrong_number",
+  "merge_dicts"
 ]
