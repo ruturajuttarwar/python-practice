@@ -1,7 +1,7 @@
 """
 Problem: Flatten Nested List
 Category: Lists
-Date: 2026-10-13
+Date: 2026-10-19
 
 Description:
     Flatten a nested list of arbitrary depth.

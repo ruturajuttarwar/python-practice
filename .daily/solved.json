@@ -15,5 +15,6 @@
   "merge_dicts",
   "bubble_sort",
   "first_non_repeating",
-  "fizzbuzz"
+  "fizzbuzz",
+  "flatten_list"
 ]
