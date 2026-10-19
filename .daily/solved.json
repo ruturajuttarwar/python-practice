@@ -14,5 +14,6 @@
   "armstrong_number",
   "merge_dicts",
   "bubble_sort",
-  "first_non_repeating"
+  "first_non_repeating",
+  "fizzbuzz"
 ]
