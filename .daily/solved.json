@@ -13,5 +13,6 @@
   "prime_check",
   "armstrong_number",
   "merge_dicts",
-  "bubble_sort"
+  "bubble_sort",
+  "first_non_repeating"
 ]
