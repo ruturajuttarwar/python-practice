@@ -17,5 +17,6 @@
   "first_non_repeating",
   "fizzbuzz",
   "flatten_list",
-  "chunk_list"
+  "chunk_list",
+  "two_sum"
 ]
