@@ -20,5 +20,6 @@
   "chunk_list",
   "two_sum",
   "insertion_sort",
-  "binary_search"
+  "binary_search",
+  "roman_to_int"
 ]
