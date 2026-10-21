@@ -19,5 +19,6 @@
   "flatten_list",
   "chunk_list",
   "two_sum",
-  "insertion_sort"
+  "insertion_sort",
+  "binary_search"
 ]
