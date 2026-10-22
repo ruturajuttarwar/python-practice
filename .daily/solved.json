@@ -22,5 +22,6 @@
   "insertion_sort",
   "binary_search",
   "roman_to_int",
-  "power_of_two"
+  "power_of_two",
+  "title_case"
 ]
