@@ -1,7 +1,7 @@
 """
 Problem: String Compression
 Category: Strings
-Date: 2026-10-10
+Date: 2026-10-22
 
 Description:
     Implement basic string compression using counts of repeated characters.

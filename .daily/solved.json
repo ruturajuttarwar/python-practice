@@ -24,5 +24,6 @@
   "roman_to_int",
   "power_of_two",
   "title_case",
-  "matrix_transpose"
+  "matrix_transpose",
+  "compress_string"
 ]
