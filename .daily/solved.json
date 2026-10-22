@@ -21,5 +21,6 @@
   "two_sum",
   "insertion_sort",
   "binary_search",
-  "roman_to_int"
+  "roman_to_int",
+  "power_of_two"
 ]
