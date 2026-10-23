@@ -26,5 +26,6 @@
   "title_case",
   "matrix_transpose",
   "compress_string",
-  "word_frequency"
+  "word_frequency",
+  "fibonacci"
 ]
