@@ -28,5 +28,6 @@
   "compress_string",
   "word_frequency",
   "fibonacci",
-  "valid_parentheses"
+  "valid_parentheses",
+  "merge_sorted"
 ]
