@@ -27,5 +27,6 @@
   "matrix_transpose",
   "compress_string",
   "word_frequency",
-  "fibonacci"
+  "fibonacci",
+  "valid_parentheses"
 ]
