@@ -31,5 +31,6 @@
   "valid_parentheses",
   "merge_sorted",
   "temperature_converter",
-  "remove_duplicates"
+  "remove_duplicates",
+  "digit_sum"
 ]
