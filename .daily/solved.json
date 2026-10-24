@@ -29,5 +29,6 @@
   "word_frequency",
   "fibonacci",
   "valid_parentheses",
-  "merge_sorted"
+  "merge_sorted",
+  "temperature_converter"
 ]
