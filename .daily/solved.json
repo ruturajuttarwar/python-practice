@@ -32,5 +32,6 @@
   "merge_sorted",
   "temperature_converter",
   "remove_duplicates",
-  "digit_sum"
+  "digit_sum",
+  "flatten_dict"
 ]
