@@ -30,5 +30,6 @@
   "fibonacci",
   "valid_parentheses",
   "merge_sorted",
-  "temperature_converter"
+  "temperature_converter",
+  "remove_duplicates"
 ]
