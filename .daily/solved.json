@@ -3,5 +3,6 @@
   "compress_string",
   "prime_check",
   "digit_sum",
-  "second_largest"
+  "second_largest",
+  "reverse_string"
 ]
