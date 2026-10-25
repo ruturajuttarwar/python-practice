@@ -1,4 +1,5 @@
 [
   "factorial",
-  "compress_string"
+  "compress_string",
+  "prime_check"
 ]
