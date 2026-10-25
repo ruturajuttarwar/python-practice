@@ -1,5 +1,6 @@
 [
   "factorial",
   "compress_string",
-  "prime_check"
+  "prime_check",
+  "digit_sum"
 ]
