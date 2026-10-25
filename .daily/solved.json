@@ -4,5 +4,6 @@
   "prime_check",
   "digit_sum",
   "second_largest",
-  "reverse_string"
+  "reverse_string",
+  "title_case"
 ]
