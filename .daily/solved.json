@@ -8,5 +8,6 @@
   "title_case",
   "selection_sort",
   "matrix_transpose",
-  "chunk_list"
+  "chunk_list",
+  "merge_sorted"
 ]
