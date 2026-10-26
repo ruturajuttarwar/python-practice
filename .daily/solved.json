@@ -7,5 +7,6 @@
   "reverse_string",
   "title_case",
   "selection_sort",
-  "matrix_transpose"
+  "matrix_transpose",
+  "chunk_list"
 ]
