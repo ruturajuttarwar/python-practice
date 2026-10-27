@@ -12,5 +12,6 @@
   "merge_sorted",
   "caesar_cipher",
   "group_by",
-  "first_non_repeating"
+  "first_non_repeating",
+  "fibonacci"
 ]
