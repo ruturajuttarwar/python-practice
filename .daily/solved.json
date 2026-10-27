@@ -10,5 +10,6 @@
   "matrix_transpose",
   "chunk_list",
   "merge_sorted",
-  "caesar_cipher"
+  "caesar_cipher",
+  "group_by"
 ]
