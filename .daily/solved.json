@@ -9,5 +9,6 @@
   "selection_sort",
   "matrix_transpose",
   "chunk_list",
-  "merge_sorted"
+  "merge_sorted",
+  "caesar_cipher"
 ]
