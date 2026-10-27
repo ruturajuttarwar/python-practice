@@ -11,5 +11,6 @@
   "chunk_list",
   "merge_sorted",
   "caesar_cipher",
-  "group_by"
+  "group_by",
+  "first_non_repeating"
 ]
