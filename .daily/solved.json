@@ -13,5 +13,6 @@
   "caesar_cipher",
   "group_by",
   "first_non_repeating",
-  "fibonacci"
+  "fibonacci",
+  "password_validator"
 ]
