@@ -14,5 +14,6 @@
   "group_by",
   "first_non_repeating",
   "fibonacci",
-  "password_validator"
+  "password_validator",
+  "temperature_converter"
 ]
