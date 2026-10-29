@@ -17,5 +17,6 @@
   "password_validator",
   "temperature_converter",
   "flatten_list",
-  "two_sum"
+  "two_sum",
+  "armstrong_number"
 ]
