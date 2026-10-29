@@ -21,5 +21,6 @@
   "armstrong_number",
   "bubble_sort",
   "merge_dicts",
-  "binary_search"
+  "binary_search",
+  "valid_parentheses"
 ]
