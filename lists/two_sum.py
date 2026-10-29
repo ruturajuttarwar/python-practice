@@ -1,7 +1,7 @@
 """
 Problem: Two Sum
 Category: Lists
-Date: 2026-10-20
+Date: 2026-10-29
 
 Description:
     Find indices of two numbers that add up to the target.

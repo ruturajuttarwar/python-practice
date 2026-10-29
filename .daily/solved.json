@@ -16,5 +16,6 @@
   "fibonacci",
   "password_validator",
   "temperature_converter",
-  "flatten_list"
+  "flatten_list",
+  "two_sum"
 ]
