@@ -19,5 +19,6 @@
   "flatten_list",
   "two_sum",
   "armstrong_number",
-  "bubble_sort"
+  "bubble_sort",
+  "merge_dicts"
 ]
