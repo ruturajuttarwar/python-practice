@@ -20,5 +20,6 @@
   "two_sum",
   "armstrong_number",
   "bubble_sort",
-  "merge_dicts"
+  "merge_dicts",
+  "binary_search"
 ]
