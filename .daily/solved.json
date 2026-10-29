@@ -18,5 +18,6 @@
   "temperature_converter",
   "flatten_list",
   "two_sum",
-  "armstrong_number"
+  "armstrong_number",
+  "bubble_sort"
 ]
