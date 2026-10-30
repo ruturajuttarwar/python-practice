@@ -22,5 +22,6 @@
   "bubble_sort",
   "merge_dicts",
   "binary_search",
-  "valid_parentheses"
+  "valid_parentheses",
+  "invert_dict"
 ]
