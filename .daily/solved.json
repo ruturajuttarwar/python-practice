@@ -23,5 +23,6 @@
   "merge_dicts",
   "binary_search",
   "valid_parentheses",
-  "invert_dict"
+  "invert_dict",
+  "remove_duplicates"
 ]
