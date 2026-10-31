@@ -24,5 +24,6 @@
   "binary_search",
   "valid_parentheses",
   "invert_dict",
-  "remove_duplicates"
+  "remove_duplicates",
+  "flatten_dict"
 ]
