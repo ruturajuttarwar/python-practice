@@ -25,5 +25,6 @@
   "valid_parentheses",
   "invert_dict",
   "remove_duplicates",
-  "flatten_dict"
+  "flatten_dict",
+  "gcd_lcm"
 ]
