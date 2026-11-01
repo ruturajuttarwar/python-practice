@@ -26,5 +26,6 @@
   "invert_dict",
   "remove_duplicates",
   "flatten_dict",
-  "gcd_lcm"
+  "gcd_lcm",
+  "is_palindrome"
 ]
