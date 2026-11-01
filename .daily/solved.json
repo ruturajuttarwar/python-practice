@@ -27,5 +27,6 @@
   "remove_duplicates",
   "flatten_dict",
   "gcd_lcm",
-  "is_palindrome"
+  "is_palindrome",
+  "fizzbuzz"
 ]
