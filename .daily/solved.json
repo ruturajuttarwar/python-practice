@@ -28,5 +28,6 @@
   "flatten_dict",
   "gcd_lcm",
   "is_palindrome",
-  "fizzbuzz"
+  "fizzbuzz",
+  "power_of_two"
 ]
