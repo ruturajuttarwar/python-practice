@@ -30,5 +30,6 @@
   "is_palindrome",
   "fizzbuzz",
   "power_of_two",
-  "roman_to_int"
+  "roman_to_int",
+  "anagram_check"
 ]
