@@ -29,5 +29,6 @@
   "gcd_lcm",
   "is_palindrome",
   "fizzbuzz",
-  "power_of_two"
+  "power_of_two",
+  "roman_to_int"
 ]
