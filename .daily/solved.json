@@ -32,5 +32,6 @@
   "power_of_two",
   "roman_to_int",
   "anagram_check",
-  "rotate_list"
+  "rotate_list",
+  "count_vowels"
 ]
