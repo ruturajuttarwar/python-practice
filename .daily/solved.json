@@ -31,5 +31,6 @@
   "fizzbuzz",
   "power_of_two",
   "roman_to_int",
-  "anagram_check"
+  "anagram_check",
+  "rotate_list"
 ]
