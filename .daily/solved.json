@@ -33,5 +33,6 @@
   "roman_to_int",
   "anagram_check",
   "rotate_list",
-  "count_vowels"
+  "count_vowels",
+  "word_frequency"
 ]
