@@ -1,4 +1,5 @@
 [
   "caesar_cipher",
-  "password_validator"
+  "password_validator",
+  "merge_dicts"
 ]
