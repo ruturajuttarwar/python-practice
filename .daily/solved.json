@@ -2,5 +2,6 @@
   "caesar_cipher",
   "password_validator",
   "merge_dicts",
-  "power_of_two"
+  "power_of_two",
+  "factorial"
 ]
