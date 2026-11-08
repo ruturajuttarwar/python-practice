@@ -3,5 +3,6 @@
   "password_validator",
   "merge_dicts",
   "power_of_two",
-  "factorial"
+  "factorial",
+  "group_by"
 ]
