@@ -6,5 +6,6 @@
   "factorial",
   "group_by",
   "selection_sort",
-  "text_analyzer"
+  "text_analyzer",
+  "fizzbuzz"
 ]
