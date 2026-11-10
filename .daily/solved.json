@@ -11,5 +11,6 @@
   "two_sum",
   "matrix_transpose",
   "valid_parentheses",
-  "binary_search"
+  "binary_search",
+  "title_case"
 ]
