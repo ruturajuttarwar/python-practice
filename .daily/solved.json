@@ -8,5 +8,6 @@
   "selection_sort",
   "text_analyzer",
   "fizzbuzz",
-  "two_sum"
+  "two_sum",
+  "matrix_transpose"
 ]
