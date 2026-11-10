@@ -10,5 +10,6 @@
   "fizzbuzz",
   "two_sum",
   "matrix_transpose",
-  "valid_parentheses"
+  "valid_parentheses",
+  "binary_search"
 ]
