@@ -9,5 +9,6 @@
   "text_analyzer",
   "fizzbuzz",
   "two_sum",
-  "matrix_transpose"
+  "matrix_transpose",
+  "valid_parentheses"
 ]
