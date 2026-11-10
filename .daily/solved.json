@@ -7,5 +7,6 @@
   "group_by",
   "selection_sort",
   "text_analyzer",
-  "fizzbuzz"
+  "fizzbuzz",
+  "two_sum"
 ]
