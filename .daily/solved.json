@@ -12,5 +12,6 @@
   "matrix_transpose",
   "valid_parentheses",
   "binary_search",
-  "title_case"
+  "title_case",
+  "count_vowels"
 ]
