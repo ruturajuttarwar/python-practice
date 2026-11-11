@@ -13,5 +13,6 @@
   "valid_parentheses",
   "binary_search",
   "title_case",
-  "count_vowels"
+  "count_vowels",
+  "remove_duplicates"
 ]

@@ -1,7 +1,7 @@
 """
 Problem: Remove Duplicates
 Category: Lists
-Date: 2026-10-30
+Date: 2026-11-11
 
 Description:
     Remove duplicates from a list while preserving order.
