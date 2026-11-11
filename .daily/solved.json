@@ -14,5 +14,6 @@
   "binary_search",
   "title_case",
   "count_vowels",
-  "remove_duplicates"
+  "remove_duplicates",
+  "is_palindrome"
 ]
