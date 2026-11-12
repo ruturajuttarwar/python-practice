@@ -15,5 +15,6 @@
   "title_case",
   "count_vowels",
   "remove_duplicates",
-  "is_palindrome"
+  "is_palindrome",
+  "invert_dict"
 ]
