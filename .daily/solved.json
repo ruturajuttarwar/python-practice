@@ -18,5 +18,6 @@
   "is_palindrome",
   "invert_dict",
   "merge_sorted",
-  "rotate_list"
+  "rotate_list",
+  "bubble_sort"
 ]
