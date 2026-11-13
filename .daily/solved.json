@@ -17,5 +17,6 @@
   "remove_duplicates",
   "is_palindrome",
   "invert_dict",
-  "merge_sorted"
+  "merge_sorted",
+  "rotate_list"
 ]
