@@ -19,5 +19,6 @@
   "invert_dict",
   "merge_sorted",
   "rotate_list",
-  "bubble_sort"
+  "bubble_sort",
+  "roman_to_int"
 ]
