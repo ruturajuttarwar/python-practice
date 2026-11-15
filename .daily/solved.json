@@ -22,5 +22,6 @@
   "bubble_sort",
   "roman_to_int",
   "digit_sum",
-  "reverse_string"
+  "reverse_string",
+  "chunk_list"
 ]
