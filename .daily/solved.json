@@ -20,5 +20,6 @@
   "merge_sorted",
   "rotate_list",
   "bubble_sort",
-  "roman_to_int"
+  "roman_to_int",
+  "digit_sum"
 ]
