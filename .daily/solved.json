@@ -23,5 +23,6 @@
   "roman_to_int",
   "digit_sum",
   "reverse_string",
-  "chunk_list"
+  "chunk_list",
+  "first_non_repeating"
 ]
