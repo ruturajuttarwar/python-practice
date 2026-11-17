@@ -1,7 +1,7 @@
 """
 Problem: Fibonacci Sequence
 Category: Math
-Date: 2026-10-27
+Date: 2026-11-17
 
 Description:
     Return the first n Fibonacci numbers.
