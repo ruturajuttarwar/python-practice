@@ -25,5 +25,6 @@
   "reverse_string",
   "chunk_list",
   "first_non_repeating",
-  "gcd_lcm"
+  "gcd_lcm",
+  "anagram_check"
 ]
