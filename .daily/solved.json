@@ -27,5 +27,6 @@
   "first_non_repeating",
   "gcd_lcm",
   "anagram_check",
-  "fibonacci"
+  "fibonacci",
+  "insertion_sort"
 ]
