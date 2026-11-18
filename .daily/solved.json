@@ -29,5 +29,6 @@
   "anagram_check",
   "fibonacci",
   "insertion_sort",
-  "temperature_converter"
+  "temperature_converter",
+  "flatten_list"
 ]
