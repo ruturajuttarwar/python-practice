@@ -28,5 +28,6 @@
   "gcd_lcm",
   "anagram_check",
   "fibonacci",
-  "insertion_sort"
+  "insertion_sort",
+  "temperature_converter"
 ]
