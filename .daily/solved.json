@@ -30,5 +30,6 @@
   "fibonacci",
   "insertion_sort",
   "temperature_converter",
-  "flatten_list"
+  "flatten_list",
+  "second_largest"
 ]
