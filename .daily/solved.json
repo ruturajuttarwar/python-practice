@@ -31,5 +31,6 @@
   "insertion_sort",
   "temperature_converter",
   "flatten_list",
-  "second_largest"
+  "second_largest",
+  "word_frequency"
 ]
