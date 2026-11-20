@@ -33,5 +33,6 @@
   "flatten_list",
   "second_largest",
   "word_frequency",
-  "flatten_dict"
+  "flatten_dict",
+  "compress_string"
 ]
