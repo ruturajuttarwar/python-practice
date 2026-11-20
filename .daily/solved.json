@@ -32,5 +32,6 @@
   "temperature_converter",
   "flatten_list",
   "second_largest",
-  "word_frequency"
+  "word_frequency",
+  "flatten_dict"
 ]
