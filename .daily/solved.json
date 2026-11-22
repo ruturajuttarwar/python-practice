@@ -2,5 +2,6 @@
   "digit_sum",
   "armstrong_number",
   "temperature_converter",
-  "title_case"
+  "title_case",
+  "flatten_list"
 ]
