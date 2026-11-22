@@ -3,5 +3,6 @@
   "armstrong_number",
   "temperature_converter",
   "title_case",
-  "flatten_list"
+  "flatten_list",
+  "anagram_check"
 ]

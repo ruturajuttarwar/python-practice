@@ -1,7 +1,7 @@
 """
 Problem: Anagram Check
 Category: Strings
-Date: 2026-11-17
+Date: 2026-11-22
 
 Description:
     Check if two strings are anagrams of each other.
