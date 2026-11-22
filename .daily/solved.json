@@ -6,5 +6,6 @@
   "flatten_list",
   "anagram_check",
   "second_largest",
-  "selection_sort"
+  "selection_sort",
+  "merge_sorted"
 ]
