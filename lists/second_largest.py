@@ -1,7 +1,7 @@
 """
 Problem: Second Largest Element
 Category: Lists
-Date: 2026-11-19
+Date: 2026-11-22
 
 Description:
     Find the second largest element without sorting.

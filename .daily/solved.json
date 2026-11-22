@@ -4,5 +4,6 @@
   "temperature_converter",
   "title_case",
   "flatten_list",
-  "anagram_check"
+  "anagram_check",
+  "second_largest"
 ]
