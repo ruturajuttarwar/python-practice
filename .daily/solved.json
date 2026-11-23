@@ -8,5 +8,6 @@
   "second_largest",
   "selection_sort",
   "merge_sorted",
-  "flatten_dict"
+  "flatten_dict",
+  "password_validator"
 ]
