@@ -7,5 +7,6 @@
   "anagram_check",
   "second_largest",
   "selection_sort",
-  "merge_sorted"
+  "merge_sorted",
+  "flatten_dict"
 ]
