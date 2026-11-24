@@ -10,5 +10,6 @@
   "merge_sorted",
   "flatten_dict",
   "password_validator",
-  "word_frequency"
+  "word_frequency",
+  "prime_check"
 ]
