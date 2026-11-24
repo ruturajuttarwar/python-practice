@@ -13,5 +13,6 @@
   "word_frequency",
   "prime_check",
   "first_non_repeating",
-  "two_sum"
+  "two_sum",
+  "remove_duplicates"
 ]
