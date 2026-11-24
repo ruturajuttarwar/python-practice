@@ -9,5 +9,6 @@
   "selection_sort",
   "merge_sorted",
   "flatten_dict",
-  "password_validator"
+  "password_validator",
+  "word_frequency"
 ]
