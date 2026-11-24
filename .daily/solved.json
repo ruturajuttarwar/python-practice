@@ -11,5 +11,6 @@
   "flatten_dict",
   "password_validator",
   "word_frequency",
-  "prime_check"
+  "prime_check",
+  "first_non_repeating"
 ]
