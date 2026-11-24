@@ -15,5 +15,6 @@
   "first_non_repeating",
   "two_sum",
   "remove_duplicates",
-  "fibonacci"
+  "fibonacci",
+  "merge_dicts"
 ]
