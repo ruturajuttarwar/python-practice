@@ -16,5 +16,6 @@
   "two_sum",
   "remove_duplicates",
   "fibonacci",
-  "merge_dicts"
+  "merge_dicts",
+  "bubble_sort"
 ]
