@@ -17,5 +17,6 @@
   "remove_duplicates",
   "fibonacci",
   "merge_dicts",
-  "bubble_sort"
+  "bubble_sort",
+  "binary_search"
 ]
