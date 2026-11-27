@@ -18,5 +18,6 @@
   "fibonacci",
   "merge_dicts",
   "bubble_sort",
-  "binary_search"
+  "binary_search",
+  "roman_to_int"
 ]
