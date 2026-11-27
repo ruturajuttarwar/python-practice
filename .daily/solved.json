@@ -20,5 +20,6 @@
   "bubble_sort",
   "binary_search",
   "roman_to_int",
-  "invert_dict"
+  "invert_dict",
+  "reverse_string"
 ]
