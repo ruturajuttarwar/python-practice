@@ -21,5 +21,6 @@
   "binary_search",
   "roman_to_int",
   "invert_dict",
-  "reverse_string"
+  "reverse_string",
+  "valid_parentheses"
 ]
